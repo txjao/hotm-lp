@@ -29,7 +29,9 @@ const config: Config = {
         banner: "url('/src/assets/banner.jpg')",
       },
       fontSize: {
-        sm: "0.75rem",
+        xs: "0.75rem",
+        sm: "1rem",
+        baseSm: "1.25rem",
         base: "1.5rem",
         lg: "2rem",
         xl: "3.5rem",
