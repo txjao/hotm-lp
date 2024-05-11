@@ -15,6 +15,7 @@ const config: Config = {
         "red": "#9a0b0b",
         "red-secondary": "#ff0000",
         "yellow": "#f4c430",
+        "yellow-hover": "#ffd117",
       },
       backgorundColor: {
         "white": "#f5f5f5",
@@ -25,7 +26,7 @@ const config: Config = {
         "yellow": "#f4c430",
       },
       backgroundImage: {
-        "ima": "url('/assets/images/ima.jpg')",
+        banner: "url('/src/assets/banner.jpg')",
       },
       fontSize: {
         sm: "0.75rem",
