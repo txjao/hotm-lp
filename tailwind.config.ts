@@ -35,6 +35,11 @@ const config: Config = {
         base: "1.5rem",
         lg: "2rem",
         xl: "3.5rem",
+      },
+      screens: {
+        '3xs': '320px',
+        '2xs': '375px',
+        'xs': '425px',
       }
     },
   },
