@@ -37,9 +37,7 @@ const config: Config = {
         xl: "3.5rem",
       },
       screens: {
-        '3xs': '320px',
-        '2xs': '375px',
-        'xs': '425px',
+        '2xl': '1920px',
       }
     },
   },
