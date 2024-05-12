@@ -77,8 +77,8 @@ export default function Home() {
           <Image alt="casal" src={prints1} className="h-[400px]" />
         </div>
       </section>
-      <footer className="absolute w-full p-10 bg-black">
-        <p className="">2024 - Todos os direitos Reservados.</p>
+      <footer className="w-full p-5 bg-black">
+        <p className="text-sm 2xl:text-base">2024 - Todos os direitos Reservados.</p>
       </footer>
     </main>
   );
