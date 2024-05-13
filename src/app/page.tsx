@@ -4,12 +4,13 @@ import bannerImage from "../assets/banner.jpg";
 import prints1 from "../assets/prints1.png";
 import banner from "../assets/imagem2.jpg";
 import casalBar from "../assets/casal-bar.jpg";
+import { Slider } from "@/components/slider";
 
 export default function Home() {
 
   return (
     <main className="">
-      <header className="fixed flex h-[5vh] w-full justify-center items-center py-10 bg-opacity-90 bg-black md:justify-end md:p-10">
+      <header className="fixed z-10 flex h-[5vh] w-full justify-center items-center py-10 bg-opacity-90 bg-black md:justify-end md:p-10">
         <div className="flex gap-10">
           <a href="#third-section" className="text-yellow text-sm underline hover:relative hover:bottom-px 
             2xl:text-base xl:text-base lg:text-baseSm md:text-sm"> Saiba Mais </a>
@@ -52,7 +53,7 @@ export default function Home() {
       <section id="third-section" className="flex flex-col bg-white justify-between items-center p-7 gap-10 xl:gap-20 md:flex-row lg:p-8">
         <div className="flex flex-col gap-16 items-start h-full xl:gap-8 lg:gap-4 md:gap-4">
           <p className="text-black text-base font-semibold">Veja exemplos</p>
-          <Image alt="casal" src={prints1} className="h-[400px]" />
+          <Slider/>
         </div>
         <div className="flex items-center flex-col gap-20 lg:gap-8 md:gap-4 md:w-3/4">
           <p className="text-black text-sm text-justify xl:text-baseSm lg:text-sm">
