@@ -8,7 +8,7 @@ export function Slider() {
         <Carousel showArrows={false} className="h-[40%]">
             <Image alt="print" src={prints.print1} className="" />
             <Image alt="print" src={prints.print2} className="" />
-            <Image alt="print" src={prints.print3} className="" />
+            <Image alt="print" src={prints.print3} className="h-[400px] object-fill" />
         </Carousel>
     )
 }
