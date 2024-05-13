@@ -20,8 +20,7 @@ export default function Home() {
         </div>
       </header>
       <section className="first-section">
-        <div id="banner" className={`flex justify-center items-end pb-6 md:items-center
-        bg-[url('../assets/bannerHero.png')] bg-no-repeat bg-cover bg-center h-[99.8vh]`}>
+        <div id="banner" className={`flex justify-center items-end pb-6 md:items-center bg-[url('../assets/bannerHero.png')] bg-no-repeat bg-cover bg-center h-[99.8vh]`}>
           <div className="flex items-center flex-col gap-9">
             <div className="flex items-center flex-col">
               <h1 className="text-base font-bold text-yellow w-full text-center 
@@ -35,7 +34,7 @@ export default function Home() {
         <div className="bg-red w-full h-[2px]"></div>
       </section>
       <section id="second-section">
-        <div className="flex flex-col gap-4 py-6 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] md:bg-gradient-to-r md:flex-row">
+        <div className="flex flex-col gap-4 pb-6 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] md:bg-gradient-to-r md:flex-row">
           <Image alt="casal" src={bannerImage} className="md:w-[40%]" />
           <div className="flex justify-center items-center text-justify">
             <p className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">Já imaginou aprender conquistar lindas mulheres utilizando sua rede social? Isso mesmo, com o meu método e estratégia de abordagem, será possível intrigar e chamar a atenção daquela mulher que você somente olha e não tem coragem de chegar, achando que não tem chance e é incapaz, não caia na enganação desses métodos por ai que ensina através de cantadas ou mensagens prontas, isso não funciona, o que de fato funciona é uma boa abordagem, utilizando as palavras certas no momento certo, adquira já nosso conteúdo e comece hoje mesmo, e tem mais, Comigo você terá o <strong className="text-yellow font-semibold">sigilo garantido</strong> e um grupo privado no telegram, para dicas diárias e lives constantes para aprender ainda mais, o que esta esperando?</p>
