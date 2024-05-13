@@ -1,15 +1,17 @@
 "use client";
 import Image from "next/image";
 import bannerImage from "../assets/banner.jpg";
-import prints1 from "../assets/prints1.png";
-import banner from "../assets/imagem2.jpg";
+import banner from "../assets/imagem2.png";
 import casalBar from "../assets/casal-bar.jpg";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import prints from "@/utils/handlePrints";
 
 export default function Home() {
 
   return (
     <main className="">
-      <header className="fixed flex h-[5vh] w-full justify-center items-center py-10 bg-opacity-90 bg-black md:justify-end md:p-10">
+      <header className="fixed z-10 flex h-[5vh] w-full justify-center items-center py-10 bg-opacity-90 bg-black md:justify-end md:p-10">
         <div className="flex gap-10">
           <a href="#third-section" className="text-yellow text-sm underline hover:relative hover:bottom-px 
             2xl:text-base xl:text-base lg:text-baseSm md:text-sm"> Saiba Mais </a>
@@ -42,7 +44,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col gap-4 bg-[url('../assets/terno.png')] bg-no-repeat bg-cover md:justify-between md:h-[50vh] md:flex-row-reverse">
-          <Image alt="casal" src={banner} className="md:w-[30%]" />
+          <Image alt="casal" src={banner} className="md:w-[30%] object-cover" />
           <div className="flex flex-col justify-center items-center text-justify gap-4 py-6 md:pl-40 md:items-start">
             <p className="text-base">Rafael Ribeiro</p>
             <p className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">Sou um entusiasta da diversão e grande admirador das mulheres. Após aplicar com sucesso meu método várias vezes, decidi compartilhar minha estratégia com outros homens. A ideia surgiu após ajudar um amigo e ele me incentivar a oferecer um curso sobre o assunto. No início, não levei a sério, mas depois percebi o impacto positivo que isso poderia ter na vida de muitos homens. Agora, estou pronto para compartilhar meu conhecimento e ajudar você a conquistar o que deseja, e claro com o <strong className="text-yellow font-semibold">sigilo garantido</strong>.</p>
@@ -50,9 +52,49 @@ export default function Home() {
         </div>
       </section>
       <section id="third-section" className="flex flex-col bg-white justify-between items-center p-7 gap-10 xl:gap-20 md:flex-row lg:p-8">
-        <div className="flex flex-col gap-16 items-start h-full xl:gap-8 lg:gap-4 md:gap-4">
+        <div className="flex flex-col gap-16 items-start xl:gap-8 lg:gap-4 md:gap-4">
           <p className="text-black text-base font-semibold">Veja exemplos</p>
-          <Image alt="casal" src={prints1} className="h-[400px]" />
+          <div className="md:flex md:justify-start-start">
+            <Carousel
+              showStatus={false}
+              showArrows={false}
+              dynamicHeight={true}
+              infiniteLoop={true}
+              autoPlay={true}
+              className="md:hidden">
+              <Image alt="print" src={prints.print1} className="" />
+              <Image alt="print" src={prints.print2} className="" />
+              <Image alt="print" src={prints.print3} className="" />
+            </Carousel>
+            <Carousel
+              showStatus={false}
+              showArrows={false}
+              dynamicHeight={true}
+              infiniteLoop={true}
+              autoPlay={true}
+              centerMode={true}
+              centerSlidePercentage={50}
+              className=" hidden md:block lg:hidden ">
+              <Image alt="print" src={prints.print1} className="px-1" />
+              <Image alt="print" src={prints.print2} className="px-1" />
+              <Image alt="print" src={prints.print3} className="px-1" />
+            </Carousel>
+            <Carousel
+              showStatus={false}
+              showArrows={false}
+              dynamicHeight={true}
+              infiniteLoop={true}
+              autoPlay={true}
+              useKeyboardArrows={true}
+              centerMode={true}
+              centerSlidePercentage={30}
+              className="hidden lg:block gap-4">
+              <Image alt="print" src={prints.print1} className="px-1" />
+              <Image alt="print" src={prints.print2} className="px-1" />
+              <Image alt="print" src={prints.print3} className="px-1" />
+            </Carousel>
+
+          </div>
         </div>
         <div className="flex items-center flex-col gap-20 lg:gap-8 md:gap-4 md:w-3/4">
           <p className="text-black text-sm text-justify xl:text-baseSm lg:text-sm">
@@ -67,15 +109,39 @@ export default function Home() {
           <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-yellow h-12 w-48 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover 2xl:h-14"> Comece Agora!</a>
         </div>
       </section>
-      <section id="fifth-section" className="flex flex-col-reverse bg-white justify-between items-center p-10 gap-20 md:flex-row-reverse ">
+      <section id="fifth-section" className="flex flex-col-reverse bg-white p-5 justify-between items-center gap-10 md:flex-row-reverse md:pr-16">
         <div className="flex items-center flex-col lg:w-3/4 gap-20 lg:gap-12">
-          <p className="text-black text-sm text-justify xl:text-baseSm lg:text-sm">
+          <p className="text-black text-sm text-justify xl:text-baseSm">
             Estou compartilhando aqui com vocês algumas abordagens e desenvolvimento de conversas com mulheres que nem conheço ainda pessoalmente, mas certamente vou conhecer e pegar com toda certeza. Quando o assunto se desenvolve nesse sentido, após eu aplicar minha técnica e a mulher receber isso positivamente a ponto de continuar o assunto, a grande tendência é o sucesso com ela.</p>
           <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center lg:h-12 md:h-12 md:w-48"> Comece Agora <br /> Mesmo!</a>
         </div>
-        <div className="flex justify-start-start">
-          <Image alt="casal" src={prints1} className="h-[400px]" />
-        </div>
+        <Carousel
+          showStatus={false}
+          showArrows={false}
+          dynamicHeight={true}
+          infiniteLoop={true}
+          autoPlay={true}
+          className="sm:hidden max-lg:block ">
+          <Image alt="print" src={prints.print4} className="" />
+          <Image alt="print" src={prints.print5} className="" />
+          <Image alt="print" src={prints.print6} className="" />
+          <Image alt="print" src={prints.print7} className="" />
+        </Carousel>
+        <Carousel
+          showStatus={false}
+          showArrows={false}
+          dynamicHeight={true}
+          infiniteLoop={true}
+          autoPlay={true}
+          useKeyboardArrows={true}
+          centerMode={true}
+          centerSlidePercentage={30}
+          className="hidden lg:block gap-4">
+          <Image alt="print" src={prints.print4} className="px-1" />
+          <Image alt="print" src={prints.print5} className="px-1" />
+          <Image alt="print" src={prints.print6} className="px-1" />
+          <Image alt="print" src={prints.print7} className="px-1" />
+        </Carousel>
       </section>
       <footer className="w-full p-5 bg-black">
         <p className="text-sm 2xl:text-base">2024 - Todos os direitos Reservados.</p>
