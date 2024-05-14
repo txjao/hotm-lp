@@ -37,9 +37,9 @@ export default function Home() {
         </div>
       </section>
       <section id="second-section">
-        <div className="flex flex-colgap-4 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] md:bg-gradient-to-r md:flex-row">
+        <div className="flex flex-col gap-4 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] md:bg-gradient-to-r md:flex-row">
           <iframe
-            width="100%" height="auto"
+            width="100%" height="200px"
             src={process.env.VIDEO_URL}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
