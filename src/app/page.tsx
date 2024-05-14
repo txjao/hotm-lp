@@ -1,11 +1,12 @@
 "use client";
 import Image from "next/image";
-import bannerImage from "../assets/banner.jpg";
 import banner from "../assets/imagem2.png";
 import casalBar from "../assets/casal-bar.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import prints from "@/utils/handlePrints";
+import Video from 'next-video';
+import video from "/videos/video.mp4";
 
 export default function Home() {
 
@@ -38,12 +39,7 @@ export default function Home() {
       </section>
       <section id="second-section">
         <div className="flex flex-col gap-4 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] md:bg-gradient-to-r md:flex-row">
-          <iframe
-            width="100%" height="200px"
-            src={process.env.VIDEO_URL}
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-          </iframe>
+          <Video src={video} />
           <div className="flex justify-center items-center text-justify">
             <p className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">Já imaginou aprender conquistar lindas mulheres utilizando sua rede social? Isso mesmo, com o meu método e estratégia de abordagem, será possível intrigar e chamar a atenção daquela mulher que você somente olha e não tem coragem de chegar, achando que não tem chance e é incapaz, não caia na enganação desses métodos por ai que ensina através de cantadas ou mensagens prontas, isso não funciona, o que de fato funciona é uma boa abordagem, utilizando as palavras certas no momento certo, adquira já nosso conteúdo e comece hoje mesmo, e tem mais, Comigo você terá o <strong className="text-yellow font-semibold">sigilo garantido</strong> e um grupo privado no telegram, para dicas diárias e lives constantes para aprender ainda mais, o que esta esperando?</p>
           </div>
