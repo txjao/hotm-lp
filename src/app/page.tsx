@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <main className="">
-      <header className="fixed z-10 flex h-[5vh] w-full justify-center items-center py-10 bg-opacity-90 bg-black md:justify-end md:p-10">
+      <header className="fixed z-10 flex h-[5vh] w-full justify-center items-center py-10 bg-black md:justify-end md:p-10">
         <div className="flex gap-10">
           <a href="#third-section" className="text-yellow text-sm underline hover:relative hover:bottom-px 
             2xl:text-base xl:text-base lg:text-baseSm md:text-sm"> Saiba Mais </a>
@@ -33,11 +33,15 @@ export default function Home() {
             <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60"> Comece Agora!</a>
           </div>
         </div>
-        <div className="bg-red w-full h-[2px]"></div>
+        <div className="h-0.5 bg-red">
+        </div>
       </section>
       <section id="second-section">
-        <div className="flex flex-col gap-4 pb-6 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] md:bg-gradient-to-r md:flex-row">
-          <Image alt="casal" src={bannerImage} className="md:w-[40%]" />
+        <div className="flex flex-colgap-4 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] md:bg-gradient-to-r md:flex-row">
+          <iframe
+            width="100%" height="auto"
+            src="http://www.youtube.com/embed//8_48FQ3VFHM?si=zhA-8tGkGRFW25Hk?enablejsapi=1&origin=http://example.com">
+          </iframe>
           <div className="flex justify-center items-center text-justify">
             <p className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">Já imaginou aprender conquistar lindas mulheres utilizando sua rede social? Isso mesmo, com o meu método e estratégia de abordagem, será possível intrigar e chamar a atenção daquela mulher que você somente olha e não tem coragem de chegar, achando que não tem chance e é incapaz, não caia na enganação desses métodos por ai que ensina através de cantadas ou mensagens prontas, isso não funciona, o que de fato funciona é uma boa abordagem, utilizando as palavras certas no momento certo, adquira já nosso conteúdo e comece hoje mesmo, e tem mais, Comigo você terá o <strong className="text-yellow font-semibold">sigilo garantido</strong> e um grupo privado no telegram, para dicas diárias e lives constantes para aprender ainda mais, o que esta esperando?</p>
           </div>
@@ -55,17 +59,19 @@ export default function Home() {
           <p className="text-black text-base font-semibold">Veja exemplos</p>
           <div className="md:flex md:justify-start-start">
             <Carousel
+              interval={5000}
               showStatus={false}
               showArrows={false}
               dynamicHeight={true}
               infiniteLoop={true}
               autoPlay={true}
-              className="md:hidden">
+              className="carousel md:hidden">
               <Image alt="print" src={prints.print1} className="" />
               <Image alt="print" src={prints.print2} className="" />
               <Image alt="print" src={prints.print3} className="" />
             </Carousel>
             <Carousel
+              interval={5000}
               showStatus={false}
               showArrows={false}
               dynamicHeight={true}
@@ -79,6 +85,7 @@ export default function Home() {
               <Image alt="print" src={prints.print3} className="px-1" />
             </Carousel>
             <Carousel
+              interval={5000}
               showStatus={false}
               showArrows={false}
               dynamicHeight={true}
@@ -115,6 +122,7 @@ export default function Home() {
           <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center lg:h-12 md:h-12 md:w-48"> Comece Agora <br /> Mesmo!</a>
         </div>
         <Carousel
+          interval={5000}
           showStatus={false}
           showArrows={false}
           dynamicHeight={true}
@@ -127,6 +135,7 @@ export default function Home() {
           <Image alt="print" src={prints.print7} className="" />
         </Carousel>
         <Carousel
+          interval={5000}
           showStatus={false}
           showArrows={false}
           dynamicHeight={true}
