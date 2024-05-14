@@ -6,6 +6,7 @@ import casalBar from "../assets/casal-bar.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import prints from "@/utils/handlePrints";
+import { BasicPlayer } from 'media-stream-player'
 
 export default function Home() {
 
