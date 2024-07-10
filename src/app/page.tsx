@@ -3,32 +3,25 @@ import Image from "next/image";
 import bannerImage from "../assets/banner.jpg";
 import banner from "../assets/imagem2.png";
 import casalBar from "../assets/casal-bar.jpg";
+import image5 from "../assets/image5.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import prints from "@/utils/handlePrints";
+import Header from "./components/Header";
 
 export default function Home() {
 
   return (
     <main className="">
-      <header className="fixed z-10 flex h-[5vh] w-full justify-center items-center py-10 bg-black md:justify-end md:p-10">
-        <div className="flex gap-10">
-          <a href="#third-section" className="text-yellow text-sm underline hover:relative hover:bottom-px 
-            2xl:text-base xl:text-base lg:text-baseSm md:text-sm"> Saiba Mais </a>
-          <a href="#second-section" className="text-yellow text-sm underline hover:relative hover:bottom-px 
-            2xl:text-base xl:text-base lg:text-baseSm md:text-sm"> Quem sou </a>
-          <a href="https://pay.hotmart.com/E92520462X" className="text-yellow text-sm underline hover:relative hover:bottom-px 
-            2xl:text-base xl:text-base lg:text-baseSm md:text-sm"> Adquira já </a>
-        </div>
-      </header>
+      <Header />
       <section className="first-section">
-        <div id="banner" className={`flex justify-center items-end pb-6 md:items-center bg-[url('../assets/bannerHero.png')] bg-no-repeat bg-cover bg-center h-[99.8vh]`}>
+        <div id="banner" className={`flex justify-center items-center pb-6 md:items-center bg-[url('../assets/bannerHero.png')] bg-no-repeat bg-cover bg-center h-[99.8vh]`}>
           <div className="flex items-center flex-col gap-9">
             <div className="flex items-center flex-col">
               <h1 className="text-base font-bold text-yellow w-full text-center 
-              2xl:w-[80%] 2xl:text-xl  xl:w-[80%] xl:text-lg lg:text-lg lg:w-[80%] md:text-base md:w-full">JÁ IMAGINOU APRENDER A CONQUISTAR LINDAS MULHERES UTILIZANDO SUA REDE SOCIAL?</h1>
-              <p className="text-sm w-[50%] text-center 
-              xl:text-md xl:w-[80%] lg:text-base lg:w-[80%] md:text-base md:w-full">Aprender a conquistar mulheres no Instagram de forma cuidadosa, respeitosa e eficaz. Desenvolva métodos de abordagem que garatem sucesso</p>
+              2xl:w-[80%] 2xl:text-xl  xl:w-[80%] xl:text-lg lg:text-lg lg:w-[80%] md:text-base md:w-full">JÁ IMAGINOU APRENDER A CONQUISTAR LINDAS MULHERES UTILIZANDO SEU INSTAGRAM?</h1>
+              <p className="text-sm w-[80%] text-center 
+              xl:text-md xl:w-[80%] lg:text-base lg:w-[80%] md:text-base md:w-full">Aprenda a usar o Instagram de maneira consistente para conhecer novas mulheres, conversar e marcar encontros. Em uma semana você vai transformar seu instagram em uma máquina, capaz de marcar dois ou mais encontros por mês.</p>
             </div>
             <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60"> Comece Agora!</a>
           </div>
@@ -39,77 +32,90 @@ export default function Home() {
       <section id="second-section">
         <div className="flex flex-col gap-4 pb-5 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] md:bg-gradient-to-r md:flex-row">
           <Image alt="casal" src={bannerImage} className="md:w-[40%]" />
-          <div className="flex justify-center items-center text-justify">
-            <p className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">Já imaginou aprender conquistar lindas mulheres utilizando sua rede social? Isso mesmo, com o meu método e estratégia de abordagem, será possível intrigar e chamar a atenção daquela mulher que você somente olha e não tem coragem de chegar, achando que não tem chance e é incapaz, não caia na enganação desses métodos por ai que ensina através de cantadas ou mensagens prontas, isso não funciona, o que de fato funciona é uma boa abordagem, utilizando as palavras certas no momento certo, adquira já nosso conteúdo e comece hoje mesmo, e tem mais, Comigo você terá o <strong className="text-yellow font-semibold">sigilo garantido</strong> e um grupo privado no telegram, para dicas diárias e lives constantes para aprender ainda mais, o que esta esperando?</p>
-          </div>
-        </div>
-        <div className="flex flex-col gap-4 bg-[url('../assets/terno.png')] bg-no-repeat bg-cover md:justify-between md:h-[50vh] md:flex-row-reverse">
-          <Image alt="casal" src={banner} className="md:w-[30%] object-cover" />
-          <div className="flex flex-col justify-center items-center text-justify gap-4 py-6 md:pl-40 md:items-start">
-            <p className="text-base">Rafael Ribeiro</p>
-            <p className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">Sou um entusiasta da diversão e grande admirador das mulheres. Após aplicar com sucesso meu método várias vezes, decidi compartilhar minha estratégia com outros homens. A ideia surgiu após ajudar um amigo e ele me incentivar a oferecer um curso sobre o assunto. No início, não levei a sério, mas depois percebi o impacto positivo que isso poderia ter na vida de muitos homens. Agora, estou pronto para compartilhar meu conhecimento e ajudar você a conquistar o que deseja, e claro com o <strong className="text-yellow font-semibold">sigilo garantido</strong>.</p>
+          <div className="flex justify-center items-center text-justify flex-col gap-4">
+            <p className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">Foi essa a pergunta que um amigo me fez na academia em 2023. Percebi que eu tinha facilidade, enquanto a grande maioria dos homens ficavam para trás. <strong className="text-yellow font-semibold">Meu segredo: Nenhum, sou um cara normal, tenho carro, ganho normal</strong>. Só que eu uso o Instagram da melhor forma possível para isso. Tem gente que usa o Instagram para vender todo o tipo de coisa, usar para paquerar é só mais uma funcionalidade.
+            </p>
+            <p className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+              <strong className="text-yellow font-semibold">O Instagram é o maior aplicativo de paquera usado hoje no Brasil, ouso dizer que é melhor do que qualquer barzinho, balada ou academia</strong>. Eu uso o Instagram consistentemente a um bom tempo para marcar encontros com a mulherada.
+            </p>
           </div>
         </div>
       </section>
-      <section id="third-section" className="flex flex-col bg-white justify-between items-center p-7 gap-10 xl:gap-20 md:flex-row lg:p-8">
-        <div className="flex flex-col gap-16 items-start xl:gap-8 lg:gap-4 md:gap-4">
-          <p className="text-black text-base font-semibold">Veja exemplos</p>
-          <div className="md:flex md:justify-start-start">
-            <Carousel
-              interval={5000}
-              showStatus={false}
-              showArrows={false}
-              dynamicHeight={true}
-              infiniteLoop={true}
-              autoPlay={true}
-              className="carousel md:hidden">
-              <Image alt="print" src={prints.print1} className="" />
-              <Image alt="print" src={prints.print2} className="" />
-              <Image alt="print" src={prints.print3} className="" />
-            </Carousel>
-            <Carousel
-              interval={5000}
-              showStatus={false}
-              showArrows={false}
-              dynamicHeight={true}
-              infiniteLoop={true}
-              autoPlay={true}
-              centerMode={true}
-              centerSlidePercentage={50}
-              className=" hidden md:block lg:hidden ">
-              <Image alt="print" src={prints.print1} className="px-1" />
-              <Image alt="print" src={prints.print2} className="px-1" />
-              <Image alt="print" src={prints.print3} className="px-1" />
-            </Carousel>
-            <Carousel
-              interval={5000}
-              showStatus={false}
-              showArrows={false}
-              dynamicHeight={true}
-              infiniteLoop={true}
-              autoPlay={true}
-              useKeyboardArrows={true}
-              centerMode={true}
-              centerSlidePercentage={30}
-              className="hidden lg:block gap-4">
-              <Image alt="print" src={prints.print1} className="px-1" />
-              <Image alt="print" src={prints.print2} className="px-1" />
-              <Image alt="print" src={prints.print3} className="px-1" />
-            </Carousel>
-
+      <section id="third-section">
+        <div className="flex flex-col gap-4 pb-5 bg-[#F5F5F5] md:justify-between md:h-[50vh] md:flex-row-reverse">
+          <Image alt="casal" src={image5} className="md:w-[30%] object-cover w-full" />
+          <div className="flex justify-center">
+            <div className="flex items-center justify-center flex-col">
+              <strong className="text-red">Para quem é esse curso:</strong>
+              <ul className="flex flex-col items-center gap-1 list-disc">
+                <li className="text-sm text-black w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                  Quem quer ter autoestima renovada;
+                </li>
+                <li className="text-sm text-black w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                  Quem quer aprender a conversar com mulheres de uma forma correta e respeitosa;
+                </li>
+                <li className="text-sm text-black w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                  Quem quer se descobrir como um cara sedutor que consegue atrair e ficar com mulheres;
+                </li>
+                <li className="text-sm text-black w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                  Quem quer desencalhar, encontrar uma pessoa especial.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div className="flex items-center flex-col gap-20 lg:gap-8 md:gap-4 md:w-3/4">
-          <p className="text-black text-sm text-justify xl:text-baseSm lg:text-sm">
-            Isso é o tipo de abordagem que você irá aprender, você terá um repertório de abordagem e de assuntos que irão te destacar em meio à multidão, você se tornará mais desejado com a minha metodologia.Não perca essa oportunidade? Conseguir falar com as mulheres que sempre viu e desejou, e faze-las te querer? Tudo isso com o <strong className="text-red font-semibold">sigilo garantido</strong>, clique em adquira já e se torne aquilo que sempre sonhou ser!</p>
-          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60"> Adquira Já!</a>
+        <div className="flex flex-col gap-4 py-5 bg-black md:justify-between md:h-[50vh] md:flex-row-reverse">
+          <Image alt="casal" src={banner} className="md:w-[30%] object-cover w-full hidden md:block" />
+          <div className="flex justify-center">
+            <div className="flex items-center justify-center flex-col">
+              <strong className="text-red">Para quem é esse curso:</strong>
+              <ul className="flex flex-col items-center gap-1 list-disc">
+                <li className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                  Quem quer ter autoestima renovada;
+                </li>
+                <li className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                  Quem quer aprender a conversar com mulheres de uma forma correta e respeitosa;
+                </li>
+                <li className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                  Quem quer se descobrir como um cara sedutor que consegue atrair e ficar com mulheres;
+                </li>
+                <li className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                  Quem quer desencalhar, encontrar uma pessoa especial.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-8 py-8 px-4 items-center bg-[#F5F5F5] md:justify-between md:h-[50vh]">
+          <p className='text-black text-sm text-center'>
+            Não importa se você tem dinheiro ou não, se é baixo, se seu carro é ruim... Cara, isso tudo não importa. O que eu posso garantir é o seguinte: Estruturar seu Instagram direitinho, que em pouco tempo você está conversando com um monte de mulher.
+          </p>
+          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60"> Comece já!</a>
         </div>
       </section>
-      <section id="fourth-section" className="flex flex-col gap-4 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] md:bg-gradient-to-r md:flex-row">
-        <Image alt="casal" src={casalBar} className="md:w-[40%] 2xl:object-cover" />
-        <div className="flex justify-center items-center flex-col gap-10 text-center py-10 md:gap-20 md:py-0">
-          <p className="text-sm w-[80%] xl:w-[60%] xl:text-baseSm lg:text-sm md:h-12 md:text-sm">Aprenda a conquistar mulheres nas redes sociais de forma cuidadosa, respeitosa e eficaz. Desenvolva métodos de abordagem que garantem sucesso!<br /><strong className="text-red-secondary font-semibold">Comece já!</strong></p>
-          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-yellow h-12 w-48 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover 2xl:h-14"> Comece Agora!</a>
+      <section id="fourth-section" className="">
+        <div className="flex flex-col gap-4 pb-5 bg-red md:justify-between md:h-[50vh] md:flex-row-reverse">
+          <Image alt="casal" src={banner} className="md:w-[30%] object-cover w-full" />
+          <div className="flex justify-center">
+            <div className="flex items-center justify-center flex-col gap-4">
+              <strong className="">Como funciona meu método:</strong>
+              <ul className="flex flex-col items-center gap-3 list-decimal">
+                <li className="text-sm text-justify w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                  <strong className="text-yellow font-semibold mr-2">Preparação: </strong>
+                  Aqui você vai melhorar sua aparência e seu Instagram para você conseguir entrar no mercado. Todo mundo sabe que a rede social é onde as pessoas postam a sua melhor versão, que nem sempre é verdade, uma verdadeira vitrine. Isso é errado? Não sei, mas é o que as pessoas fazem e você devia fazer também. Vou abrir a caixa preta com você do que funciona para mim, tipos de postagem, stories, textos... A mulher vai entrar no seu perfil e ter vontade de te conhecer.
+                </li>
+                <li className="text-sm text-justify w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                  <strong className="text-yellow font-semibold mr-2">Abordagem: </strong>
+                  Vou ensinar o que você precisa fazer para chamar atenção, agir como um caçador, ter paciência, entender quando é a hora de conversar sem ser afoito. 90% dos caras erram justamente nessa parte. Colocam mulher num pedestal e ficam atrás dela. Você vai aprender a ter a fenece para trocar uma ideia e marcar um encontro num barzinho ou até num motel.
+                </li>
+                <li className="text-sm text-justify w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                  <strong className="text-yellow font-semibold mr-2">Finalização: </strong>
+                  Você já conversou com a mulher ali, chegou a hora. Vou te falar o que fazer, e quando der certo, você vai lembrar de mim e falar para si mesmo, bendito Rafael, onde você estava todo esse tempo?
+                </li>
+              </ul>
+              <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60"> Comece já!</a>
+            </div>
+          </div>
         </div>
       </section>
       <section id="fifth-section" className="flex flex-col-reverse bg-white p-5 justify-between items-center gap-10 md:flex-row-reverse md:pr-16">
