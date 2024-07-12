@@ -87,7 +87,7 @@ export default function Home() {
           </div>
           <Image alt="casal" src={image5} className="md:w-[30%] object-cover lg:w-1/3" />
         </div>
-        <div className="flex flex-col px-4 py-12 items-center bg-[#F5F5F5] md:justify-between md:h-[33vh]">
+        <div className="flex flex-col px-4 py-20 items-center bg-[#F5F5F5] md:justify-between md:h-[40vh]">
           <p className='text-black text-baseSm text-center w-[70%]'>
             Não importa se você tem dinheiro ou não, se é baixo, se seu carro é ruim... Cara, isso tudo não importa. O que eu posso garantir é o seguinte: Estruturar seu Instagram direitinho, que em pouco tempo você está conversando com um monte de mulher.
           </p>
@@ -120,17 +120,16 @@ export default function Home() {
         </div>
       </section>
       <section id="fifth-section">
-        <div className="h-[60vh] bg-white">
-          <h3 className="text-red">Por que criei esse curso?</h3>
-          <p className="text-black">Eu cansei de ver caras legais que não conseguiam simplesmente conversar com mulheres. Com autoestima lá em baixo, mas com potencial. Eu literalmente criei isso aqui para ajudar as pessoas, ajudar você. Então, usa para o bem tá!!
+        <div className="h-[60vh] bg-white flex flex-col justify-center gap-4 px-28">
+          <h3 className="text-red text-lg font-semibold mb-2">Por que criei esse curso?</h3>
+          <p className="text-black text-sm mb-4 font-medium">Eu cansei de ver caras legais que não conseguiam simplesmente conversar com mulheres. Com autoestima lá em baixo, mas com potencial. Eu literalmente criei isso aqui para ajudar as pessoas, ajudar você. Então, usa para o bem tá!!
             Esse curso é livre de mentirada</p>
-          <p className="text-black">
+          <p className="text-black text-sm font-medium">
             Você já viu esses cursos de paquera onde falam que você vai hipnotizar, apertar botões na mulher, que ela vai ficar vidrada em você, esse monte de baboseiras. E tem piores tá !!! tem aqueles que dizem que você precisa aprender aquelas cantadas infalíveis, que elas irão ficar malucas na sua, pessoal, pelo amor de Deus, que mulher gosta de cantada idiota? Mulher de verdade, curte uma boa conversa, uma abordagem respeitosa e é isso que irei te ensinar.
-            A gente sabe que isso tudo é mentira. Aqui eu vou te ensinar o que funciona na real, sem perda de tempo, sem desrespeitar o seu dinheiro. Você vai participar de uma comunidade onde vai poder enviar suas dúvidas e vamos responder. Olha o preço do curso!! Meu objetivo é te ajudar</p>
+            A gente sabe que isso tudo é mentira. Aqui eu vou te ensinar o que funciona na real, sem perda de tempo, sem desrespeitar o seu dinheiro. Você vai participar de uma comunidade onde vai poder enviar suas dúvidas e vamos responder. Olha o preço do curso!! Meu objetivo é te ajudar.</p>
         </div>
-        <div className="h-[40vh] flex items-center justify-center">
-          <p className="absolute text-white py-4 w-[60%]"><strong className="text-base">Quem sou eu?</strong><br></br>Prazer, sou Rafael Ribeiro e sou um grande admirador das mulheres e após ajudar vários amigos com meu método, eu resolvi partir para internet e compartilhar com você também essas estratégias incríveis que vão certamente fazer de você um CONQUISTADOR, aquilo que começou com pequenas brincadeiras, ajudou vários amigos meus a se dar bem com elas e agora é sua vez de colocar em pratica esse método e  fazer você mexer com a cabeça das mulheres no seu dia a dia, lembrando que aqui o sigilo é garantido.        </p>
-          <Image alt="casal" src={terno} className="w-full h-full object-cover" />
+        <div className={`h-[40vh] flex items-center justify-center bg-terno bg-cover`}>
+          <p className="text-white py-4 w-[60%]"><strong className="text-base">Quem sou eu?</strong><br></br>Prazer, sou Rafael Ribeiro e sou um grande admirador das mulheres e após ajudar vários amigos com meu método, eu resolvi partir para internet e compartilhar com você também essas estratégias incríveis que vão certamente fazer de você um CONQUISTADOR, aquilo que começou com pequenas brincadeiras, ajudou vários amigos meus a se dar bem com elas e agora é sua vez de colocar em pratica esse método e  fazer você mexer com a cabeça das mulheres no seu dia a dia, lembrando que aqui o sigilo é garantido.        </p>
         </div>
       </section>
       <section id="sixth-section" className="flex flex-col-reverse bg-white p-5 justify-between items-center gap-10 md:flex-row-reverse md:pr-16">

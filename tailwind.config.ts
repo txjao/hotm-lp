@@ -27,6 +27,7 @@ const config: Config = {
       },
       backgroundImage: {
         banner: "url('/src/assets/banner.jpg')",
+        terno: "url('../assets/terno.png')",
       },
       fontSize: {
         xs: "0.75rem",
