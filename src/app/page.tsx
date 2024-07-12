@@ -8,6 +8,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import prints from "@/utils/handlePrints";
 import Header from "./components/Header";
+import Card from "./components/Card";
 
 export default function Home() {
 
@@ -120,6 +121,9 @@ export default function Home() {
       </section>
       <section id="fifth-section" className="flex flex-col-reverse bg-white p-5 justify-between items-center gap-10 md:flex-row-reverse md:pr-16">
         <div className="flex items-center flex-col lg:w-3/4 gap-20 lg:gap-12">
+        <Card type="red" title="alou">
+          test
+        </Card>
           <p className="text-black text-sm text-justify xl:text-baseSm">
             Estou compartilhando aqui com vocês algumas abordagens e desenvolvimento de conversas com mulheres que nem conheço ainda pessoalmente, mas certamente vou conhecer e pegar com toda certeza. Quando o assunto se desenvolve nesse sentido, após eu aplicar minha técnica e a mulher receber isso positivamente a ponto de continuar o assunto, a grande tendência é o sucesso com ela.</p>
           <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center lg:h-12 md:h-12 md:w-48"> Comece Agora <br /> Mesmo!</a>
