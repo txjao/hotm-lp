@@ -1,3 +1,4 @@
+
 interface cardProps {
     children: React.ReactNode;
     type: 'red' | 'gray';
@@ -11,7 +12,7 @@ export default function Card(props: cardProps) {
         if(props.type === 'red') {
             return 'bg-red text-white';
         } else {
-            return 'bg-gray text-black';
+            return 'bg-[#D9D9D9] text-black';
         }
    }
 
@@ -22,7 +23,7 @@ export default function Card(props: cardProps) {
    }
 
     return(
-        <div className={`${handleColor()} ${handleHover()} flex flex-col h-60 w-48 rounded justify-center items-center transition-all duration-75`}>
+        <div className={`${handleColor()} ${handleHover()} flex flex-col h-60 w-60 mx-4 rounded justify-center items-center transition-all duration-75`}>
             <strong>{props.title}</strong>
             <p className="text-sm text-center mx-2">{props.children}</p>
         </div>
