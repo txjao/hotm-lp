@@ -4,16 +4,18 @@ import bannerImage from "../assets/banner.jpg";
 import banner from "../assets/imagem2.png";
 import casalBar from "../assets/casal-bar.jpg";
 import image5 from "../assets/image5.png";
-import terno from "../assets/terno.png";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import prints from "@/utils/handlePrints";
 import Header from "./components/Header";
 import Card from "./components/Card";
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 export default function Home() {
-
   return (
     <main className="">
       <Header />
@@ -122,27 +124,68 @@ export default function Home() {
         </div>
       </section>
       <section id="fifth-section">
-        <div className="md:h-[60vh] bg-white flex flex-col justify-center gap-4 py-4 px-8 md:py-0 md:px-28">
-          <h3 className="text-red text-lg font-semibold mb-2">Por que criei esse curso?</h3>
+        <div className="md:h-[60vh] bg-white flex flex-col text-justify justify-center gap-4 py-4 px-8 md:py-0 md:px-28">
+          <h3 className="text-red text-base font-semibold mb-2 text-center">Por que criei esse curso?</h3>
           <p className="text-black text-sm mb-4 font-medium">Eu cansei de ver caras legais que não conseguiam simplesmente conversar com mulheres. Com autoestima lá em baixo, mas com potencial. Eu literalmente criei isso aqui para ajudar as pessoas, ajudar você. Então, usa para o bem tá!!
             Esse curso é livre de mentirada</p>
           <p className="text-black text-sm font-medium">
             Você já viu esses cursos de paquera onde falam que você vai hipnotizar, apertar botões na mulher, que ela vai ficar vidrada em você, esse monte de baboseiras. E tem piores tá !!! tem aqueles que dizem que você precisa aprender aquelas cantadas infalíveis, que elas irão ficar malucas na sua, pessoal, pelo amor de Deus, que mulher gosta de cantada idiota? Mulher de verdade, curte uma boa conversa, uma abordagem respeitosa e é isso que irei te ensinar.
             A gente sabe que isso tudo é mentira. Aqui eu vou te ensinar o que funciona na real, sem perda de tempo, sem desrespeitar o seu dinheiro. Você vai participar de uma comunidade onde vai poder enviar suas dúvidas e vamos responder. Olha o preço do curso!! Meu objetivo é te ajudar.</p>
         </div>
-        <div className={`md:h-[40vh] flex items-center justify-center bg-terno bg-cover bg-center`}>
-          <p className="text-white py-6 px-8 md:px-0 md:w-[60%]"><strong className="text-base">Quem sou eu?</strong><br></br>Prazer, sou Rafael Ribeiro e sou um grande admirador das mulheres e após ajudar vários amigos com meu método, eu resolvi partir para internet e compartilhar com você também essas estratégias incríveis que vão certamente fazer de você um CONQUISTADOR, aquilo que começou com pequenas brincadeiras, ajudou vários amigos meus a se dar bem com elas e agora é sua vez de colocar em pratica esse método e  fazer você mexer com a cabeça das mulheres no seu dia a dia, lembrando que aqui o sigilo é garantido.        </p>
+        <div className={`md:h-[40vh] flex flex-col py-4 items-center justify-center bg-terno bg-cover bg-center`}>
+          <h3 className="text-base font-semibold mb-2 text-center">Quem sou eu?</h3>
+          <p className="text-white py-6 px-8 md:px-0 md:w-[60%] text-justify">Prazer, sou Rafael Ribeiro e sou um grande admirador das mulheres e após ajudar vários amigos com meu método, eu resolvi partir para internet e compartilhar com você também essas estratégias incríveis que vão certamente fazer de você um CONQUISTADOR, aquilo que começou com pequenas brincadeiras, ajudou vários amigos meus a se dar bem com elas e agora é sua vez de colocar em pratica esse método e  fazer você mexer com a cabeça das mulheres no seu dia a dia, lembrando que aqui o sigilo é garantido.        </p>
         </div>
       </section>
-      <section id="sixth-section" className="flex flex-col-reverse bg-white p-5 justify-between items-center gap-10 md:flex-row-reverse md:pr-16">
-        <div className="flex items-center flex-col lg:w-3/4 gap-20 lg:gap-12">
-        <Card type="red" title="alou">
-          test
-        </Card>
-          <p className="text-black text-sm text-justify xl:text-baseSm">
-            Estou compartilhando aqui com vocês algumas abordagens e desenvolvimento de conversas com mulheres que nem conheço ainda pessoalmente, mas certamente vou conhecer e pegar com toda certeza. Quando o assunto se desenvolve nesse sentido, após eu aplicar minha técnica e a mulher receber isso positivamente a ponto de continuar o assunto, a grande tendência é o sucesso com ela.</p>
-          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center lg:h-12 md:h-12 md:w-48"> Comece Agora <br /> Mesmo!</a>
+      <section id="sixth-section" className="bg-white p-5">
+        <h3 className="text-red text-base font-bold mb-2 text-center md:mb-12 md:text-left">Conheça o curso</h3>
+        <div>
+          <Carousel
+            showStatus={false}
+            className="sm:hidden"
+          >
+            <Card type="red" title="Bônus 01">
+              Canal no Telegram para dicas diárias além de lives para te ajudar ainda mais.
+            </Card>
+            <Card type="red" title="Bônus 02">
+              O curso escrito para você poder ler de forma sigilosa.
+            </Card>
+            <Card type="red" title="Bônus 03">
+              um e-book que te dará outras dicas incríveis.
+            </Card>
+          </Carousel>
+
+          <div className="hidden gap-20 md:flex">
+            <Card type="red" title="Bônus 01">
+              Canal no Telegram para dicas diárias além de lives para te ajudar ainda mais.
+            </Card>
+            <Card type="red" title="Bônus 02">
+              O curso escrito para você poder ler de forma sigilosa.
+            </Card>
+            <Card type="red" title="Bônus 03">
+              um e-book que te dará outras dicas incríveis.
+            </Card>
+          </div>
         </div>
+        <div className="flex flex-col items-center gap-3">
+          <h3 className="text-red text-base font-bold mb-2 text-center md:mb-12">APRENDA A CONQUISTAR MULHERES USANDO AS REDES SOCIAIS
+          </h3>
+          <p className="text-center text-black text-sm mb-4">Para transformar seu Instagram em uma máquina de paquera infalível.<br />
+            <strong>Somente 89,90 à vista</strong><br />
+            Ou<br />
+            <strong>12 vezes no cartão</strong><br />
+            Só isso? Sim. Te falei que meu objetivo é ajudar outras pessoas.<br />
+            E aí, vamos aumentar a autoestima masculina juntos?
+          </p>
+          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60"> Comece Agora!</a>
+        </div>
+        <div className="py-4">
+          <strong className="text-red">Garantia</strong>
+          <p className="text-black text-justify text-sm">Você tem garantia incondicional de 07 dias. O risco é todo meu, se você não gostar, só pedir seu dinheiro de volta em até 07 dias após a compra que eu te devolvo sem nem perguntar por quê.
+          </p>
+        </div>
+      </section>
+      <section id="eighth" className="bg-white">
         <Carousel
           interval={5000}
           showStatus={false}
@@ -150,7 +193,10 @@ export default function Home() {
           dynamicHeight={true}
           infiniteLoop={true}
           autoPlay={true}
-          className="sm:hidden max-lg:block ">
+          className=" red sm:hidden max-lg:block ">
+          <Image alt="print" src={prints.print1} className="" />
+          <Image alt="print" src={prints.print2} className="" />
+          <Image alt="print" src={prints.print3} className="" />
           <Image alt="print" src={prints.print4} className="" />
           <Image alt="print" src={prints.print5} className="" />
           <Image alt="print" src={prints.print6} className="" />
@@ -166,12 +212,36 @@ export default function Home() {
           useKeyboardArrows={true}
           centerMode={true}
           centerSlidePercentage={30}
-          className="hidden lg:block gap-4">
-          <Image alt="print" src={prints.print4} className="px-1" />
-          <Image alt="print" src={prints.print5} className="px-1" />
-          <Image alt="print" src={prints.print6} className="px-1" />
-          <Image alt="print" src={prints.print7} className="px-1" />
+          className="red hidden lg:block gap-4">
+          <Image alt="print" src={prints.print1} className="" />
+          <Image alt="print" src={prints.print2} className="" />
+          <Image alt="print" src={prints.print3} className="" />
+          <Image alt="print" src={prints.print4} className="" />
+          <Image alt="print" src={prints.print5} className="" />
+          <Image alt="print" src={prints.print6} className="" />
+          <Image alt="print" src={prints.print7} className="" />
         </Carousel>
+        <div className="flex items-center flex-col p-4 pt-0 lg:w-3/4 gap-20 lg:gap-12">
+          <p className="text-black text-sm text-justify xl:text-baseSm">
+            Estou compartilhando aqui com vocês algumas abordagens e desenvolvimento de conversas com mulheres que nem conheço ainda pessoalmente, mas certamente vou conhecer e pegar com toda certeza. Quando o assunto se desenvolve nesse sentido, após eu aplicar minha técnica e a mulher receber isso positivamente a ponto de continuar o assunto, a grande tendência é o sucesso com ela.</p>
+          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center lg:h-12 md:h-12 md:w-48"> Comece Agora <br /> Mesmo!</a>
+        </div>
+      </section>
+      <section id="nineth" className="bg-black p-2">
+        <h3 className="text-[#FF0000] text-base font-boldtext-left md:mb-12 md:text-left">Perguntas e Respostas:</h3>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1-content"
+            id="panel1-header"
+          >
+            Accordion 1
+          </AccordionSummary>
+          <AccordionDetails>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </AccordionDetails>
+        </Accordion>
       </section>
       <footer className="w-full p-5 bg-black">
         <p className="text-sm 2xl:text-base">2024 - Todos os direitos Reservados.</p>
