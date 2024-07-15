@@ -99,7 +99,7 @@ export default function Home() {
         </div>
       </section>
       <section id="fourth-section" className="">
-        <div className="flex flex-col pb-6 gap-4 bg-red md:justify-between md:h-[100vh] md:flex-row-reverse">
+        <div className="flex flex-col pb-6 md:pb-0 gap-4 bg-red md:justify-between md:h-[100vh] md:flex-row-reverse">
           <Image alt="casal" src={banner} className="md:w-[30%] object-cover w-full h-full" />
           <div className="flex justify-center">
             <div className="flex items-center justify-center flex-col gap-4">
@@ -132,14 +132,14 @@ export default function Home() {
             Você já viu esses cursos de paquera onde falam que você vai hipnotizar, apertar botões na mulher, que ela vai ficar vidrada em você, esse monte de baboseiras. E tem piores tá !!! tem aqueles que dizem que você precisa aprender aquelas cantadas infalíveis, que elas irão ficar malucas na sua, pessoal, pelo amor de Deus, que mulher gosta de cantada idiota? Mulher de verdade, curte uma boa conversa, uma abordagem respeitosa e é isso que irei te ensinar.
             A gente sabe que isso tudo é mentira. Aqui eu vou te ensinar o que funciona na real, sem perda de tempo, sem desrespeitar o seu dinheiro. Você vai participar de uma comunidade onde vai poder enviar suas dúvidas e vamos responder. Olha o preço do curso!! Meu objetivo é te ajudar.</p>
         </div>
-        <div className={`md:h-[40vh] flex flex-col py-4 items-center justify-center bg-terno bg-cover bg-center`}>
+        <div className={`md:h-[40vh] flex flex-col py-4  items-center justify-center bg-terno bg-cover bg-center`}>
           <h3 className="text-base font-semibold mb-2 text-center">Quem sou eu?</h3>
           <p className="text-white py-6 px-8 md:px-0 md:w-[60%] text-justify">Prazer, sou Rafael Ribeiro e sou um grande admirador das mulheres e após ajudar vários amigos com meu método, eu resolvi partir para internet e compartilhar com você também essas estratégias incríveis que vão certamente fazer de você um CONQUISTADOR, aquilo que começou com pequenas brincadeiras, ajudou vários amigos meus a se dar bem com elas e agora é sua vez de colocar em pratica esse método e  fazer você mexer com a cabeça das mulheres no seu dia a dia, lembrando que aqui o sigilo é garantido.        </p>
         </div>
       </section>
       <section id="sixth-section" className="bg-white p-5">
-        <h3 className="text-red text-base font-bold mb-2 text-center md:mb-12 md:text-left">Conheça o curso</h3>
-        <div>
+        <h3 className="text-red text-base font-bold mb-2 text-center md:mb-12 md:text-left md:text-lg md:px-14 md:mt-14">Conheça o curso</h3>
+        <div className="lg:flex lg:items-center lg:justify-center">
           <Carousel
             showStatus={false}
             className="sm:hidden"
@@ -155,7 +155,7 @@ export default function Home() {
             </Card>
           </Carousel>
 
-          <div className="hidden gap-20 md:flex">
+          <div className="hidden gap-20 md:flex md:mb-14">
             <Card type="red" title="Bônus 01">
               Canal no Telegram para dicas diárias além de lives para te ajudar ainda mais.
             </Card>
@@ -168,78 +168,120 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center gap-3">
-          <h3 className="text-red text-base font-bold mb-2 text-center md:mb-12">APRENDA A CONQUISTAR MULHERES USANDO AS REDES SOCIAIS
+          <h3 className="text-red text-base font-bold mb-2 text-center md:mb-8">APRENDA A CONQUISTAR MULHERES USANDO AS REDES SOCIAIS
           </h3>
           <p className="text-center text-black text-sm mb-4">Para transformar seu Instagram em uma máquina de paquera infalível.<br />
             <strong>Somente 89,90 à vista</strong><br />
-            Ou<br />
+            <span className="text-base">ou</span><br />
             <strong>12 vezes no cartão</strong><br />
-            Só isso? Sim. Te falei que meu objetivo é ajudar outras pessoas.<br />
+            spanSó isso? Sim. Te falei que meu objetivo é ajudar outras pessoas.<br />
             E aí, vamos aumentar a autoestima masculina juntos?
           </p>
-          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60"> Comece Agora!</a>
+          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60 mb-6"> Comece Agora!</a>
         </div>
-        <div className="py-4">
-          <strong className="text-red">Garantia</strong>
+        <div className="py-4 md:ml-20 md:mt-4 md:w-[70%] md:flex md:flex-col md:flex-start">
+          <strong className="text-red text-base">Garantia</strong>
           <p className="text-black text-justify text-sm">Você tem garantia incondicional de 07 dias. O risco é todo meu, se você não gostar, só pedir seu dinheiro de volta em até 07 dias após a compra que eu te devolvo sem nem perguntar por quê.
           </p>
         </div>
+        <hr />
       </section>
-      <section id="eighth" className="bg-white">
-        <Carousel
-          interval={5000}
-          showStatus={false}
-          showArrows={false}
-          dynamicHeight={true}
-          infiniteLoop={true}
-          autoPlay={true}
-          className=" red sm:hidden max-lg:block ">
-          <Image alt="print" src={prints.print1} className="" />
-          <Image alt="print" src={prints.print2} className="" />
-          <Image alt="print" src={prints.print3} className="" />
-          <Image alt="print" src={prints.print4} className="" />
-          <Image alt="print" src={prints.print5} className="" />
-          <Image alt="print" src={prints.print6} className="" />
-          <Image alt="print" src={prints.print7} className="" />
-        </Carousel>
-        <Carousel
-          interval={5000}
-          showStatus={false}
-          showArrows={false}
-          dynamicHeight={true}
-          infiniteLoop={true}
-          autoPlay={true}
-          useKeyboardArrows={true}
-          centerMode={true}
-          centerSlidePercentage={30}
-          className="red hidden lg:block gap-4">
-          <Image alt="print" src={prints.print1} className="" />
-          <Image alt="print" src={prints.print2} className="" />
-          <Image alt="print" src={prints.print3} className="" />
-          <Image alt="print" src={prints.print4} className="" />
-          <Image alt="print" src={prints.print5} className="" />
-          <Image alt="print" src={prints.print6} className="" />
-          <Image alt="print" src={prints.print7} className="" />
-        </Carousel>
-        <div className="flex items-center flex-col p-4 pt-0 lg:w-3/4 gap-20 lg:gap-12">
-          <p className="text-black text-sm text-justify xl:text-baseSm">
+      <section id="eighth" className="bg-white md:flex md:items-center md:pt-10">
+        <div className="flex items-center flex-col p-4 pt-0 lg:w-3/4 gap-8 lg:gap-12">
+          <p className="text-black text-sm text-justify xl:text-baseSm md:w-[80%]">
             Estou compartilhando aqui com vocês algumas abordagens e desenvolvimento de conversas com mulheres que nem conheço ainda pessoalmente, mas certamente vou conhecer e pegar com toda certeza. Quando o assunto se desenvolve nesse sentido, após eu aplicar minha técnica e a mulher receber isso positivamente a ponto de continuar o assunto, a grande tendência é o sucesso com ela.</p>
-          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center lg:h-12 md:h-12 md:w-48"> Comece Agora <br /> Mesmo!</a>
+          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold mb-10 md:mb-0 bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center lg:h-12 md:h-12 md:w-48"> Comece Agora <br /> Mesmo!</a>
+        </div>
+        <div className="w-[70%] md:px-10 ">
+          <Carousel
+            interval={5000}
+            showStatus={false}
+            showArrows={false}
+            dynamicHeight={true}
+            infiniteLoop={true}
+            autoPlay={true}
+            className=" red sm:hidden max-lg:block">
+            <Image alt="print" src={prints.print1} className="shadow-sm px-2" />
+            <Image alt="print" src={prints.print2} className="shadow-sm px-2" />
+            <Image alt="print" src={prints.print3} className="shadow-sm px-2" />
+            <Image alt="print" src={prints.print4} className="shadow-sm px-2" />
+            <Image alt="print" src={prints.print5} className="shadow-sm px-2" />
+            <Image alt="print" src={prints.print6} className="shadow-sm px-2" />
+            <Image alt="print" src={prints.print7} className="shadow-sm px-2" />
+          </Carousel>
+          <Carousel
+            interval={5000}
+            showStatus={false}
+            showArrows={false}
+            dynamicHeight={true}
+            infiniteLoop={true}
+            autoPlay={true}
+            useKeyboardArrows={true}
+            centerMode={true}
+            centerSlidePercentage={30}
+            className="red hidden lg:block gap-4">
+            <Image alt="print" src={prints.print1} className="shadow-sm px-2" />
+            <Image alt="print" src={prints.print2} className="shadow-sm px-2" />
+            <Image alt="print" src={prints.print3} className="shadow-sm px-2" />
+            <Image alt="print" src={prints.print4} className="shadow-sm px-2" />
+            <Image alt="print" src={prints.print5} className="shadow-sm px-2" />
+            <Image alt="print" src={prints.print6} className="shadow-sm px-2" />
+            <Image alt="print" src={prints.print7} className="shadow-sm px-2" />
+          </Carousel>
         </div>
       </section>
-      <section id="nineth" className="bg-black p-2">
-        <h3 className="text-[#FF0000] text-base font-boldtext-left md:mb-12 md:text-left">Perguntas e Respostas:</h3>
-        <Accordion>
+      <section id="nineth" className="bg-[#181818] pb-10 py-6 p-8 md:p-20 ">
+        <h3 className="text-[#FF0000] text-base font-bold text-left md:mb-12 md:text-left md:text-lg">Perguntas e Respostas:</h3>
+        <Accordion className="bg-[#181818] text-white">
           <AccordionSummary
+            className="font-semibold md:text-base"
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1-content"
             id="panel1-header"
           >
-            Accordion 1
+            Onde eu vou receber o curso?
           </AccordionSummary>
           <AccordionDetails>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            O curso é online e hospedado na Hotmart.
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className="bg-[#181818] text-white">
+          <AccordionSummary
+            className="font-semibold md:text-base"
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1-content"
+            id="panel1-header"
+          >
+            Quem é você?
+          </AccordionSummary>
+          <AccordionDetails>
+            Sou um cara normal igual você, mas não quero aparecer devido questões pessoais. Quero te ajudar mantendo meu sigilo e o seu.
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className="bg-[#181818] text-white">
+          <AccordionSummary
+            className="font-semibold md:text-base"
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1-content"
+            id="panel1-header"
+          >
+            Esse não mais um desses cursos de cantadas?
+          </AccordionSummary>
+          <AccordionDetails>
+            Não, esse método vai te ensinar abordagens diretas, na base do diálogo.
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className="bg-[#181818] text-white">
+          <AccordionSummary
+            className="font-semibold md:text-base"
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1-content"
+            id="panel1-header"
+          >
+            Eu sou tímido, o curso vai me ajudar?
+          </AccordionSummary>
+          <AccordionDetails>
+            Sim, claro que a timidez é algo da personalidade, é mais difícil, não vou mentir, mas se você aplicar o método da forma correta, o curso vai te ajudar a pegar mulher e também melhorar sua timidez.
           </AccordionDetails>
         </Accordion>
       </section>
