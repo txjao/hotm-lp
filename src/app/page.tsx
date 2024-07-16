@@ -4,13 +4,18 @@ import bannerImage from "../assets/banner.jpg";
 import banner from "../assets/imagem2.png";
 import casalBar from "../assets/casal-bar.jpg";
 import image5 from "../assets/image5.png";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import prints from "@/utils/handlePrints";
 import Header from "./components/Header";
+import Card from "./components/Card";
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 
 export default function Home() {
-
   return (
     <main className="">
       <Header />
@@ -30,9 +35,9 @@ export default function Home() {
         </div>
       </section>
       <section id="second-section">
-        <div className="flex flex-col gap-4 pb-5 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] md:bg-gradient-to-r md:flex-row">
+        <div className="flex flex-col gap-4 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] md:bg-gradient-to-r md:flex-row">
           <Image alt="casal" src={bannerImage} className="md:w-[40%]" />
-          <div className="flex justify-center items-center text-justify flex-col gap-4">
+          <div className="py-4 md:py-0 flex justify-center items-center text-justify flex-col gap-4">
             <p className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">Foi essa a pergunta que um amigo me fez na academia em 2023. Percebi que eu tinha facilidade, enquanto a grande maioria dos homens ficavam para trás. <strong className="text-yellow font-semibold">Meu segredo: Nenhum, sou um cara normal, tenho carro, ganho normal</strong>. Só que eu uso o Instagram da melhor forma possível para isso. Tem gente que usa o Instagram para vender todo o tipo de coisa, usar para paquerar é só mais uma funcionalidade.
             </p>
             <p className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
@@ -42,63 +47,63 @@ export default function Home() {
         </div>
       </section>
       <section id="third-section">
-        <div className="flex flex-col gap-4 pb-5 bg-[#F5F5F5] md:justify-between md:h-[50vh] md:flex-row-reverse">
-          <Image alt="casal" src={image5} className="md:w-[30%] object-cover w-full" />
-          <div className="flex justify-center">
-            <div className="flex items-center justify-center flex-col">
-              <strong className="text-red">Para quem é esse curso:</strong>
-              <ul className="flex flex-col items-center gap-1 list-disc">
-                <li className="text-sm text-black w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+        <div className="flex flex-col bg-[#F5F5F5] md:justify-between md:h-[33vh] md:flex-row-reverse">
+          <Image alt="casal" src={banner} className="object-cover object-center h-full md:w-[30%] lg:w-1/3" />
+          <div className="flex justify-center w-full">
+            <div className="py-4 md:py-0 px-14 md:px-0 flex items-start justify-center flex-col md:w-2/3">
+              <strong className="text-red text-base mb-2 md:text-baseSm">Para quem é esse curso:</strong>
+              <ul className="flex flex-col items-start gap-1 list-disc">
+                <li className="text-sm text-black xl:text-baseSm lg:text-sm md:text-xs">
                   Quem quer ter autoestima renovada;
                 </li>
-                <li className="text-sm text-black w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                <li className=" text-sm text-black xl:text-baseSm lg:text-sm md:text-xs">
                   Quem quer aprender a conversar com mulheres de uma forma correta e respeitosa;
                 </li>
-                <li className="text-sm text-black w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                <li className="text-sm text-black xl:text-baseSm lg:text-sm md:text-xs">
                   Quem quer se descobrir como um cara sedutor que consegue atrair e ficar com mulheres;
                 </li>
-                <li className="text-sm text-black w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                <li className="text-sm text-black xl:text-baseSm lg:text-sm md:text-xs">
                   Quem quer desencalhar, encontrar uma pessoa especial.
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 py-5 bg-black md:justify-between md:h-[50vh] md:flex-row-reverse">
-          <Image alt="casal" src={banner} className="md:w-[30%] object-cover w-full hidden md:block" />
-          <div className="flex justify-center">
-            <div className="flex items-center justify-center flex-col">
-              <strong className="text-red">Para quem é esse curso:</strong>
-              <ul className="flex flex-col items-center gap-1 list-disc">
-                <li className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
-                  Quem quer ter autoestima renovada;
+        <div className="flex flex-col gap-4 bg-black md:justify-between md:h-[33vh] md:flex-row-reverse">
+          <div className="flex justify-center w-full">
+            <div className="py-4 md:py-0 px-14 md:px-0 flex items-start justify-center flex-col md:w-2/3">
+              <strong className="text-red text-base mb-2 md:text-baseSm">Para quem NÃO é esse curso:</strong>
+              <ul className="flex flex-col items-start gap-1 list-disc">
+                <li className="text-sm text-white xl:text-baseSm lg:text-sm md:text-xs">
+                  Para quem quer ser cabaço o resto da vida;
                 </li>
-                <li className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
-                  Quem quer aprender a conversar com mulheres de uma forma correta e respeitosa;
+                <li className=" text-sm text-white xl:text-baseSm lg:text-sm md:text-xs">
+                  Para quem é desrespeitoso com as mulheres e não quer melhorar;
                 </li>
-                <li className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
-                  Quem quer se descobrir como um cara sedutor que consegue atrair e ficar com mulheres;
+                <li className="text-sm text-white xl:text-baseSm lg:text-sm md:text-xs">
+                  Para quem fica arrumando desculpa para fala com mulher;
                 </li>
-                <li className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
-                  Quem quer desencalhar, encontrar uma pessoa especial.
+                <li className="text-sm text-white xl:text-baseSm lg:text-sm md:text-xs">
+                  Para quem quer continuar mandando mensagens ridículas para elas, do tipo: "gostosa", afinal, é só isso que você tem.
                 </li>
               </ul>
             </div>
           </div>
+          <Image alt="casal" src={image5} className="md:w-[30%] object-cover w-full lg:w-1/3" />
         </div>
-        <div className="flex flex-col gap-8 py-8 px-4 items-center bg-[#F5F5F5] md:justify-between md:h-[50vh]">
-          <p className='text-black text-sm text-center'>
+        <div className="flex flex-col gap-8 px-8 py-20 items-center bg-[#F5F5F5] md:justify-between md:h-[40vh] md:px-4 md:py-8">
+          <p className='text-black text-baseSm text-center md:w-[70%] md:text-sm'>
             Não importa se você tem dinheiro ou não, se é baixo, se seu carro é ruim... Cara, isso tudo não importa. O que eu posso garantir é o seguinte: Estruturar seu Instagram direitinho, que em pouco tempo você está conversando com um monte de mulher.
           </p>
           <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60"> Comece já!</a>
         </div>
       </section>
       <section id="fourth-section" className="">
-        <div className="flex flex-col gap-4 pb-5 bg-red md:justify-between md:h-[50vh] md:flex-row-reverse">
-          <Image alt="casal" src={banner} className="md:w-[30%] object-cover w-full" />
+        <div className="flex flex-col gap-4 bg-red md:justify-between md:h-[100vh] md:flex-row-reverse">
+          <Image alt="casal" src={banner} className="md:w-[30%] object-cover object-left w-full h-full" />
           <div className="flex justify-center">
             <div className="flex items-center justify-center flex-col gap-4">
-              <strong className="">Como funciona meu método:</strong>
+              <strong className="text-base mb-4">Como funciona meu método:</strong>
               <ul className="flex flex-col items-center gap-3 list-decimal">
                 <li className="text-sm text-justify w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
                   <strong className="text-yellow font-semibold mr-2">Preparação: </strong>
@@ -108,7 +113,7 @@ export default function Home() {
                   <strong className="text-yellow font-semibold mr-2">Abordagem: </strong>
                   Vou ensinar o que você precisa fazer para chamar atenção, agir como um caçador, ter paciência, entender quando é a hora de conversar sem ser afoito. 90% dos caras erram justamente nessa parte. Colocam mulher num pedestal e ficam atrás dela. Você vai aprender a ter a fenece para trocar uma ideia e marcar um encontro num barzinho ou até num motel.
                 </li>
-                <li className="text-sm text-justify w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                <li className="text-sm text-justify w-[80%] xl:text-baseSm lg:text-sm md:text-xs mb-6">
                   <strong className="text-yellow font-semibold mr-2">Finalização: </strong>
                   Você já conversou com a mulher ali, chegou a hora. Vou te falar o que fazer, e quando der certo, você vai lembrar de mim e falar para si mesmo, bendito Rafael, onde você estava todo esse tempo?
                 </li>
@@ -118,12 +123,69 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="fifth-section" className="flex flex-col-reverse bg-white p-5 justify-between items-center gap-10 md:flex-row-reverse md:pr-16">
-        <div className="flex items-center flex-col lg:w-3/4 gap-20 lg:gap-12">
-          <p className="text-black text-sm text-justify xl:text-baseSm">
-            Estou compartilhando aqui com vocês algumas abordagens e desenvolvimento de conversas com mulheres que nem conheço ainda pessoalmente, mas certamente vou conhecer e pegar com toda certeza. Quando o assunto se desenvolve nesse sentido, após eu aplicar minha técnica e a mulher receber isso positivamente a ponto de continuar o assunto, a grande tendência é o sucesso com ela.</p>
-          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center lg:h-12 md:h-12 md:w-48"> Comece Agora <br /> Mesmo!</a>
+      <section id="fifth-section">
+        <div className="md:h-[80vh] bg-white flex flex-col text-justify justify-center gap-4 py-4 px-8 md:py-0 md:px-28">
+          <h3 className="text-red text-base font-semibold mb-2 text-center md:text-sm">Por que criei esse curso?</h3>
+          <p className="text-black text-sm mb-4 font-medium md:text-sm">Eu cansei de ver caras legais que não conseguiam simplesmente conversar com mulheres. Com autoestima lá em baixo, mas com potencial. Eu literalmente criei isso aqui para ajudar as pessoas, ajudar você. Então, usa para o bem tá!!
+            Esse curso é livre de mentirada</p>
+          <p className="text-black text-sm font-medium md:text-sm">
+            Você já viu esses cursos de paquera onde falam que você vai hipnotizar, apertar botões na mulher, que ela vai ficar vidrada em você, esse monte de baboseiras. E tem piores tá !!! tem aqueles que dizem que você precisa aprender aquelas cantadas infalíveis, que elas irão ficar malucas na sua, pessoal, pelo amor de Deus, que mulher gosta de cantada idiota? Mulher de verdade, curte uma boa conversa, uma abordagem respeitosa e é isso que irei te ensinar.
+            A gente sabe que isso tudo é mentira. Aqui eu vou te ensinar o que funciona na real, sem perda de tempo, sem desrespeitar o seu dinheiro. Você vai participar de uma comunidade onde vai poder enviar suas dúvidas e vamos responder. Olha o preço do curso!! Meu objetivo é te ajudar.</p>
         </div>
+        <div className={`md:h-[60vh] flex flex-col py-4 items-center justify-center bg-terno bg-cover bg-center`}>
+          <h3 className="text-base font-semibold mb-2 text-center">Quem sou eu?</h3>
+          <p className="text-white py-6 px-8 md:px-0 md:w-[60%] text-justify">Prazer, sou Rafael Ribeiro e sou um grande admirador das mulheres e após ajudar vários amigos com meu método, eu resolvi partir para internet e compartilhar com você também essas estratégias incríveis que vão certamente fazer de você um CONQUISTADOR, aquilo que começou com pequenas brincadeiras, ajudou vários amigos meus a se dar bem com elas e agora é sua vez de colocar em pratica esse método e  fazer você mexer com a cabeça das mulheres no seu dia a dia, lembrando que aqui o sigilo é garantido.        </p>
+        </div>
+      </section>
+      <section id="sixth-section" className="bg-white p-5">
+        <h3 className="text-red text-base font-bold mb-2 text-center md:mb-12 md:text-left">Conheça o curso</h3>
+        <div>
+          <Carousel
+            showStatus={false}
+            className="sm:hidden"
+          >
+            <Card type="red" title="Bônus 01">
+              Canal no Telegram para dicas diárias além de lives para te ajudar ainda mais.
+            </Card>
+            <Card type="red" title="Bônus 02">
+              O curso escrito para você poder ler de forma sigilosa.
+            </Card>
+            <Card type="red" title="Bônus 03">
+              um e-book que te dará outras dicas incríveis.
+            </Card>
+          </Carousel>
+
+          <div className="hidden gap-20 md:flex">
+            <Card type="red" title="Bônus 01">
+              Canal no Telegram para dicas diárias além de lives para te ajudar ainda mais.
+            </Card>
+            <Card type="red" title="Bônus 02">
+              O curso escrito para você poder ler de forma sigilosa.
+            </Card>
+            <Card type="red" title="Bônus 03">
+              um e-book que te dará outras dicas incríveis.
+            </Card>
+          </div>
+        </div>
+        <div className="flex flex-col items-center gap-3">
+          <h3 className="text-red text-base font-bold mb-2 text-center md:mt-12">APRENDA A CONQUISTAR MULHERES USANDO AS REDES SOCIAIS
+          </h3>
+          <p className="text-center text-black text-sm mb-4">Para transformar seu Instagram em uma máquina de paquera infalível.<br />
+            <strong>Somente 89,90 à vista</strong><br />
+            Ou<br />
+            <strong>12 vezes no cartão</strong><br />
+            Só isso? Sim. Te falei que meu objetivo é ajudar outras pessoas.<br />
+            E aí, vamos aumentar a autoestima masculina juntos?
+          </p>
+          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60"> Comece Agora!</a>
+        </div>
+        <div className="py-4">
+          <strong className="text-red">Garantia</strong>
+          <p className="text-black text-justify text-sm">Você tem garantia incondicional de 07 dias. O risco é todo meu, se você não gostar, só pedir seu dinheiro de volta em até 07 dias após a compra que eu te devolvo sem nem perguntar por quê.
+          </p>
+        </div>
+      </section>
+      <section id="eighth" className="bg-white md:flex md:flex-row-reverse md:justify-center md:items-center md:pt-4">
         <Carousel
           interval={5000}
           showStatus={false}
@@ -131,7 +193,10 @@ export default function Home() {
           dynamicHeight={true}
           infiniteLoop={true}
           autoPlay={true}
-          className="sm:hidden max-lg:block ">
+          className=" red mx-4 sm:hidden max-lg:block">
+          <Image alt="print" src={prints.print1} className="" />
+          <Image alt="print" src={prints.print2} className="" />
+          <Image alt="print" src={prints.print3} className="" />
           <Image alt="print" src={prints.print4} className="" />
           <Image alt="print" src={prints.print5} className="" />
           <Image alt="print" src={prints.print6} className="" />
@@ -147,12 +212,75 @@ export default function Home() {
           useKeyboardArrows={true}
           centerMode={true}
           centerSlidePercentage={30}
-          className="hidden lg:block gap-4">
-          <Image alt="print" src={prints.print4} className="px-1" />
-          <Image alt="print" src={prints.print5} className="px-1" />
-          <Image alt="print" src={prints.print6} className="px-1" />
-          <Image alt="print" src={prints.print7} className="px-1" />
+          className="red hidden lg:block gap-4">
+          <Image alt="print" src={prints.print1} className="" />
+          <Image alt="print" src={prints.print2} className="" />
+          <Image alt="print" src={prints.print3} className="" />
+          <Image alt="print" src={prints.print4} className="" />
+          <Image alt="print" src={prints.print5} className="" />
+          <Image alt="print" src={prints.print6} className="" />
+          <Image alt="print" src={prints.print7} className="" />
         </Carousel>
+        <div className="flex items-center flex-col p-4 pt-0 lg:w-3/4 gap-20 lg:gap-12">
+          <p className="text-black text-sm text-justify xl:text-baseSm">
+            Estou compartilhando aqui com vocês algumas abordagens e desenvolvimento de conversas com mulheres que nem conheço ainda pessoalmente, mas certamente vou conhecer e pegar com toda certeza. Quando o assunto se desenvolve nesse sentido, após eu aplicar minha técnica e a mulher receber isso positivamente a ponto de continuar o assunto, a grande tendência é o sucesso com ela.</p>
+          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center lg:h-12 md:h-12 md:w-48"> Comece Agora <br /> Mesmo!</a>
+        </div>
+      </section>
+      <section id="nineth" className="bg-black p-2 h-[70vh]">
+        <h3 className="text-[#FF0000] text-base font-bold text-left mb-4 md:mb-12 md:text-left">Perguntas e Respostas:</h3>
+        <div className=" flex justify-center">
+          <div className="my-4 md:w-[60%]">
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1-content"
+                id="panel1-header"
+              >
+                Onde eu vou receber o curso?
+              </AccordionSummary>
+              <AccordionDetails>
+                O curso é online e hospedado na Hotmart.
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1-content"
+                id="panel1-header"
+              >
+                Quem é você?
+              </AccordionSummary>
+              <AccordionDetails>
+                Sou um cara normal igual você, mas não quero aparecer devido questões pessoais. Quero te ajudar mantendo meu sigilo e o seu.
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1-content"
+                id="panel1-header"
+              >
+                Esse não mais um desses cursos de cantadas?
+              </AccordionSummary>
+              <AccordionDetails>
+                Não, esse método vai te ensinar abordagens diretas, na base do diálogo.
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1-content"
+                id="panel1-header"
+              >
+                Eu sou tímido, o curso vai me ajudar?
+              </AccordionSummary>
+              <AccordionDetails>
+                Sim, claro que a timidez é algo da personalidade, é mais difícil, não vou mentir, mas se você aplicar o método da forma correta, o curso vai te ajudar a pegar mulher e também melhorar sua timidez.
+              </AccordionDetails>
+            </Accordion>
+          </div>
+        </div>
       </section>
       <footer className="w-full p-5 bg-black">
         <p className="text-sm 2xl:text-base">2024 - Todos os direitos Reservados.</p>
