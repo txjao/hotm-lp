@@ -23,7 +23,7 @@ export default function Card(props: cardProps) {
    }
 
     return(
-        <div className={`${handleColor()} ${handleHover()} flex flex-col h-60 w-60 mx-4 rounded justify-center items-center transition-all duration-75`}>
+        <div className={`${handleColor()} ${handleHover()} flex flex-col h-60 w-full rounded justify-center items-center transition-all duration-75 md:w-60`}>
             <strong>{props.title}</strong>
             <p className="text-sm text-center mx-2">{props.children}</p>
         </div>
