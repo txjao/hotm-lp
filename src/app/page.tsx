@@ -118,7 +118,7 @@ export default function Home() {
                   Você já conversou com a mulher ali, chegou a hora. Vou te falar o que fazer, e quando der certo, você vai lembrar de mim e falar para si mesmo, bendito Rafael, onde você estava todo esse tempo?
                 </li>
               </ul>
-              <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60"> Comece já!</a>
+              <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 mb-4 hover:bg-green-hover md:h-14 md:w-60 md:mb-0"> Comece já!</a>
             </div>
           </div>
         </div>
