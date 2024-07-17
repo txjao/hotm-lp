@@ -21,22 +21,22 @@ export default function Home() {
       <Header />
       <section className="first-section">
         <div id="banner" className={`flex justify-center items-center pb-6 md:items-center bg-[url('../assets/bannerHero.png')] bg-no-repeat bg-cover bg-center h-[99.8vh]`}>
-          <div className="flex items-center flex-col gap-9">
-            <div className="flex items-center flex-col">
+          <div className="flex items-center flex-col gap-9 2xl:gap-12 md:px-6 lg:px-0">
+            <div className="flex items-center flex-col 2xl:gap-20">
               <h1 className="text-base font-bold text-yellow w-full text-center 
-              2xl:w-[80%] 2xl:text-xl  xl:w-[80%] xl:text-lg lg:text-lg lg:w-[80%] md:text-base md:w-full">JÁ IMAGINOU APRENDER A CONQUISTAR LINDAS MULHERES UTILIZANDO SEU INSTAGRAM?</h1>
+              2xl:w-[80%] 2xl:text-xl  xl:w-[80%] xl:text-lg lg:text-lg lg:w-[80%] md:text-base md:w-full mb-4">JÁ IMAGINOU APRENDER A CONQUISTAR LINDAS MULHERES UTILIZANDO SEU INSTAGRAM?</h1>
               <p className="text-sm w-[80%] text-center 
               xl:text-md xl:w-[80%] lg:text-base lg:w-[80%] md:text-base md:w-full">Aprenda a usar o Instagram de maneira consistente para conhecer novas mulheres, conversar e marcar encontros. Em uma semana você vai transformar seu instagram em uma máquina, capaz de marcar dois ou mais encontros por mês.</p>
             </div>
-            <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60"> Comece Agora!</a>
+            <a href="https://pay.hotmart.com/E92520462X" className="text-white font-regular text-lg bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60 lg:h-20 lg:w-80"> Comece Agora!</a>
           </div>
         </div>
         <div className="h-0.5 bg-red">
         </div>
       </section>
       <section id="second-section">
-        <div className="flex flex-col gap-4 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] md:bg-gradient-to-r md:flex-row">
-          <Image alt="casal" src={bannerImage} className="md:w-[40%]" />
+        <div className="flex flex-col gap-4 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] 2xl:h-[35vh] md:bg-gradient-to-r md:flex-row">
+          <Image alt="casal" src={bannerImage} className="md:w-[40%] object-cover" />
           <div className="py-4 md:py-0 flex justify-center items-center text-justify flex-col gap-4">
             <p className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">Foi essa a pergunta que um amigo me fez na academia em 2023. Percebi que eu tinha facilidade, enquanto a grande maioria dos homens ficavam para trás. <strong className="text-yellow font-semibold">Meu segredo: Nenhum, sou um cara normal, tenho carro, ganho normal</strong>. Só que eu uso o Instagram da melhor forma possível para isso. Tem gente que usa o Instagram para vender todo o tipo de coisa, usar para paquerar é só mais uma funcionalidade.
             </p>
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </section>
       <section id="third-section">
-        <div className="flex flex-col bg-[#F5F5F5] md:justify-between md:h-[33vh] md:flex-row-reverse">
+        <div className="flex flex-col bg-[#F5F5F5] md:justify-between md:h-[33vh] 2xl:h-[25vh] md:flex-row-reverse">
           <Image alt="casal" src={banner} className="md:w-[30%] object-cover lg:w-1/3" />
           <div className="flex justify-center w-full">
             <div className="py-4 md:py-0 px-14 md:px-0 flex items-start justify-center flex-col md:w-2/3">
@@ -69,7 +69,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 bg-black md:justify-between md:h-[33vh] md:flex-row-reverse">
+        <div className="flex flex-col gap-4 bg-black md:justify-between md:h-[33vh] 2xl:h-[25vh] md:flex-row-reverse">
           <div className="flex justify-center w-full">
             <div className="py-4 md:py-0 px-14 md:px-0 flex items-start justify-center flex-col md:w-2/3">
               <strong className="text-red text-base mb-2">Para quem NÃO é esse curso:</strong>
@@ -89,18 +89,18 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <Image alt="casal" src={image5} className="md:w-[30%] object-cover w-full lg:w-1/3" />
+          <Image alt="casal" src={image5} className="md:w-[30%] h-[25vh] md:h-full object-cover w-full lg:w-1/3 object-top"/>
         </div>
-        <div className="flex flex-col gap-8 px-8 py-20 items-center bg-[#F5F5F5] md:justify-between md:h-[40vh]">
-          <p className='text-black text-baseSm text-center md:w-[70%]'>
+        <div className="flex flex-col gap-8 px-8 py-4 2xl:py-14 lg:py-20 items-center bg-[#F5F5F5] md:justify-between lg:h-[40vh] 2xl:h-[20vh]">
+          <p className='text-black lg:text-baseSm text-center md:w-[70%] 2xl:w-[55%] '>
             Não importa se você tem dinheiro ou não, se é baixo, se seu carro é ruim... Cara, isso tudo não importa. O que eu posso garantir é o seguinte: Estruturar seu Instagram direitinho, que em pouco tempo você está conversando com um monte de mulher.
           </p>
           <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60"> Comece já!</a>
         </div>
       </section>
       <section id="fourth-section" className="">
-        <div className="flex flex-col pb-6 md:pb-0 gap-4 bg-red md:justify-between md:h-[100vh] md:flex-row-reverse">
-          <Image alt="casal" src={banner} className="md:w-[30%] object-cover w-full h-full" />
+        <div className="flex flex-col pb-6 md:pb-0 gap-4 bg-red md:justify-between md:h-[100vh] md:flex-row-reverse 2xl:h-[45vh]">
+          <Image alt="casal" src={banner} className="md:w-[30%] object-cover md:object-left w-full h-full" />
           <div className="flex justify-center">
             <div className="flex items-center justify-center flex-col gap-4">
               <strong className="text-base mb-4">Como funciona meu método:</strong>
@@ -124,7 +124,7 @@ export default function Home() {
         </div>
       </section>
       <section id="fifth-section">
-        <div className="md:h-[60vh] bg-white flex flex-col text-justify justify-center gap-4 py-4 px-8 md:py-0 md:px-28">
+        <div className="lg:h-[60vh] bg-white flex flex-col text-justify justify-center gap-4 py-4 px-8 lg:py-0 md:px-28 2xl:h-[25vh]">
           <h3 className="text-red text-base font-semibold mb-2 text-center">Por que criei esse curso?</h3>
           <p className="text-black text-sm mb-4 font-medium">Eu cansei de ver caras legais que não conseguiam simplesmente conversar com mulheres. Com autoestima lá em baixo, mas com potencial. Eu literalmente criei isso aqui para ajudar as pessoas, ajudar você. Então, usa para o bem tá!!
             Esse curso é livre de mentirada</p>
@@ -132,7 +132,7 @@ export default function Home() {
             Você já viu esses cursos de paquera onde falam que você vai hipnotizar, apertar botões na mulher, que ela vai ficar vidrada em você, esse monte de baboseiras. E tem piores tá !!! tem aqueles que dizem que você precisa aprender aquelas cantadas infalíveis, que elas irão ficar malucas na sua, pessoal, pelo amor de Deus, que mulher gosta de cantada idiota? Mulher de verdade, curte uma boa conversa, uma abordagem respeitosa e é isso que irei te ensinar.
             A gente sabe que isso tudo é mentira. Aqui eu vou te ensinar o que funciona na real, sem perda de tempo, sem desrespeitar o seu dinheiro. Você vai participar de uma comunidade onde vai poder enviar suas dúvidas e vamos responder. Olha o preço do curso!! Meu objetivo é te ajudar.</p>
         </div>
-        <div className={`md:h-[40vh] flex flex-col py-4  items-center justify-center bg-terno bg-cover bg-center`}>
+        <div className={`lg:h-[40vh] flex flex-col py-4 items-center justify-center bg-terno bg-cover bg-center 2xl:h-[25vh]`}>
           <h3 className="text-base font-semibold mb-2 text-center">Quem sou eu?</h3>
           <p className="text-white py-6 px-8 md:px-0 md:w-[60%] text-justify">Prazer, sou Rafael Ribeiro e sou um grande admirador das mulheres e após ajudar vários amigos com meu método, eu resolvi partir para internet e compartilhar com você também essas estratégias incríveis que vão certamente fazer de você um CONQUISTADOR, aquilo que começou com pequenas brincadeiras, ajudou vários amigos meus a se dar bem com elas e agora é sua vez de colocar em pratica esse método e  fazer você mexer com a cabeça das mulheres no seu dia a dia, lembrando que aqui o sigilo é garantido.        </p>
         </div>
@@ -170,18 +170,18 @@ export default function Home() {
         <div className="flex flex-col items-center gap-3">
           <h3 className="text-red text-base font-bold mb-2 text-center md:mb-8">APRENDA A CONQUISTAR MULHERES USANDO AS REDES SOCIAIS
           </h3>
-          <p className="text-center text-black text-sm mb-4">Para transformar seu Instagram em uma máquina de paquera infalível.<br />
+          <p className="text-center text-black text-sm mb-4 2xl:text-baseSm">Para transformar seu Instagram em uma máquina de paquera infalível.<br />
             <strong>Somente 89,90 à vista</strong><br />
             <span className="text-base">ou</span><br />
             <strong>12 vezes no cartão</strong><br />
-            spanSó isso? Sim. Te falei que meu objetivo é ajudar outras pessoas.<br />
+            Só isso? Sim. Te falei que meu objetivo é ajudar outras pessoas.<br />
             E aí, vamos aumentar a autoestima masculina juntos?
           </p>
           <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60 mb-6"> Comece Agora!</a>
         </div>
-        <div className="py-4 md:ml-20 md:mt-4 md:w-[70%] md:flex md:flex-col md:flex-start">
+        <div className="py-4 md:ml-20 md:mt-4 md:w-[70%] md:flex md:flex-col md:flex-start 2xl:ml-40 2xl:w-full">
           <strong className="text-red text-base">Garantia</strong>
-          <p className="text-black text-justify text-sm">Você tem garantia incondicional de 07 dias. O risco é todo meu, se você não gostar, só pedir seu dinheiro de volta em até 07 dias após a compra que eu te devolvo sem nem perguntar por quê.
+          <p className="text-black text-justify text-sm  2xl:text-baseSm">Você tem garantia incondicional de 07 dias. O risco é todo meu, se você não gostar, só pedir seu dinheiro de volta em até 07 dias após a compra que eu te devolvo sem nem perguntar por quê.
           </p>
         </div>
         <hr />
@@ -190,9 +190,9 @@ export default function Home() {
         <div className="flex items-center flex-col p-4 pt-0 lg:w-3/4 gap-8 lg:gap-12">
           <p className="text-black text-sm text-justify xl:text-baseSm md:w-[80%]">
             Estou compartilhando aqui com vocês algumas abordagens e desenvolvimento de conversas com mulheres que nem conheço ainda pessoalmente, mas certamente vou conhecer e pegar com toda certeza. Quando o assunto se desenvolve nesse sentido, após eu aplicar minha técnica e a mulher receber isso positivamente a ponto de continuar o assunto, a grande tendência é o sucesso com ela.</p>
-          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold mb-10 md:mb-0 bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center lg:h-12 md:h-12 md:w-48"> Comece Agora <br /> Mesmo!</a>
+          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold mb-10 md:mb-0 bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center md:h-16 md:w-48"> Comece Agora <br /> Mesmo!</a>
         </div>
-        <div className="w-[70%] md:px-10 ">
+        <div className="w-[70%] md:px-10 2xl:w-[45%]">
           <Carousel
             interval={5000}
             showStatus={false}
@@ -230,9 +230,9 @@ export default function Home() {
           </Carousel>
         </div>
       </section>
-      <section id="nineth" className="bg-[#181818] pb-10 py-6 p-8 md:p-20 ">
+      <section id="nineth" className="bg-[#181818] pb-10 py-6 p-8 md:p-20">
         <h3 className="text-[#FF0000] text-base font-bold text-left md:mb-12 md:text-left md:text-lg">Perguntas e Respostas:</h3>
-        <Accordion className="bg-[#181818] text-white">
+        <Accordion className="bg-[#181818] text-white 2xl:pl-56 md:pl-20 lg:pl-36">
           <AccordionSummary
             className="font-semibold md:text-base"
             expandIcon={<ExpandMoreIcon />}
@@ -245,7 +245,7 @@ export default function Home() {
             O curso é online e hospedado na Hotmart.
           </AccordionDetails>
         </Accordion>
-        <Accordion className="bg-[#181818] text-white">
+        <Accordion className="bg-[#181818] text-white 2xl:pl-56 md:pl-20 lg:pl-36">
           <AccordionSummary
             className="font-semibold md:text-base"
             expandIcon={<ExpandMoreIcon />}
@@ -258,7 +258,7 @@ export default function Home() {
             Sou um cara normal igual você, mas não quero aparecer devido questões pessoais. Quero te ajudar mantendo meu sigilo e o seu.
           </AccordionDetails>
         </Accordion>
-        <Accordion className="bg-[#181818] text-white">
+        <Accordion className="bg-[#181818] text-white 2xl:pl-56 md:pl-20 lg:pl-36">
           <AccordionSummary
             className="font-semibold md:text-base"
             expandIcon={<ExpandMoreIcon />}
@@ -271,7 +271,7 @@ export default function Home() {
             Não, esse método vai te ensinar abordagens diretas, na base do diálogo.
           </AccordionDetails>
         </Accordion>
-        <Accordion className="bg-[#181818] text-white">
+        <Accordion className="bg-[#181818] text-white 2xl:pl-56 md:pl-20 lg:pl-36">
           <AccordionSummary
             className="font-semibold md:text-base"
             expandIcon={<ExpandMoreIcon />}
