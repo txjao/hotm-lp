@@ -51,7 +51,7 @@ export default function Home() {
           <Image alt="casal" src={banner} className="md:w-[30%] object-cover lg:w-1/3" />
           <div className="flex justify-center w-full">
             <div className="py-4 md:py-0 px-14 md:px-0 flex items-start justify-center flex-col md:w-2/3">
-              <strong className="text-red text-base mb-2">Para quem é esse curso:</strong>
+              <strong className="text-red text-base mb-2 md:text-baseSm">Para quem é esse curso:</strong>
               <ul className="flex flex-col items-start gap-1 list-disc">
                 <li className="text-sm text-black xl:text-baseSm lg:text-sm md:text-xs">
                   Quem quer ter autoestima renovada;
@@ -72,7 +72,7 @@ export default function Home() {
         <div className="flex flex-col gap-4 bg-black md:justify-between md:h-[33vh] 2xl:h-[25vh] md:flex-row-reverse">
           <div className="flex justify-center w-full">
             <div className="py-4 md:py-0 px-14 md:px-0 flex items-start justify-center flex-col md:w-2/3">
-              <strong className="text-red text-base mb-2">Para quem NÃO é esse curso:</strong>
+              <strong className="text-red text-base mb-2 md:text-baseSm">Para quem NÃO é esse curso:</strong>
               <ul className="flex flex-col items-start gap-1 list-disc">
                 <li className="text-sm text-white xl:text-baseSm lg:text-sm md:text-xs">
                   Para quem quer ser cabaço o resto da vida;
@@ -89,7 +89,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <Image alt="casal" src={image5} className="md:w-[30%] h-[25vh] md:h-full object-cover w-full lg:w-1/3 object-top"/>
+          <Image alt="casal" src={image5} className="md:w-[30%] h-[25vh] md:h-full object-cover w-full lg:w-1/3 object-top" />
         </div>
         <div className="flex flex-col gap-8 px-8 py-4 2xl:py-14 lg:py-20 items-center bg-[#F5F5F5] md:justify-between lg:h-[40vh] 2xl:h-[20vh]">
           <p className='text-black lg:text-baseSm text-center md:w-[70%] 2xl:w-[55%] '>
@@ -128,7 +128,7 @@ export default function Home() {
           <h3 className="text-red text-base font-semibold mb-2 text-center">Por que criei esse curso?</h3>
           <p className="text-black text-sm mb-4 font-medium">Eu cansei de ver caras legais que não conseguiam simplesmente conversar com mulheres. Com autoestima lá em baixo, mas com potencial. Eu literalmente criei isso aqui para ajudar as pessoas, ajudar você. Então, usa para o bem tá!!
             Esse curso é livre de mentirada</p>
-          <p className="text-black text-sm font-medium">
+          <p className="text-black text-sm font-medium md:text-sm">
             Você já viu esses cursos de paquera onde falam que você vai hipnotizar, apertar botões na mulher, que ela vai ficar vidrada em você, esse monte de baboseiras. E tem piores tá !!! tem aqueles que dizem que você precisa aprender aquelas cantadas infalíveis, que elas irão ficar malucas na sua, pessoal, pelo amor de Deus, que mulher gosta de cantada idiota? Mulher de verdade, curte uma boa conversa, uma abordagem respeitosa e é isso que irei te ensinar.
             A gente sabe que isso tudo é mentira. Aqui eu vou te ensinar o que funciona na real, sem perda de tempo, sem desrespeitar o seu dinheiro. Você vai participar de uma comunidade onde vai poder enviar suas dúvidas e vamos responder. Olha o preço do curso!! Meu objetivo é te ajudar.</p>
         </div>
