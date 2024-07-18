@@ -18,7 +18,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 export default function Home() {
   return (
     <main className="">
-      <Header />
       <section className="first-section">
         <div id="banner" className={`flex justify-center items-center pb-6 md:items-center bg-[url('../assets/bannerHero.png')] bg-no-repeat bg-cover bg-center h-[99.8vh]`}>
           <div className="flex items-center flex-col gap-9 2xl:gap-12 md:px-6 lg:px-0">
