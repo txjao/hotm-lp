@@ -2,7 +2,7 @@
 import Image from "next/image";
 import bannerImage from "../assets/banner.jpg";
 import banner from "../assets/imagem2.png";
-import casalBar from "../assets/casal-bar.jpg";
+import garantia from "../assets/garantia.webp";
 import image5 from "../assets/image5.png";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -28,7 +28,7 @@ export default function Home() {
               <p className="text-sm w-[80%] text-center 
               xl:text-md xl:w-[80%] lg:text-base lg:w-[80%] md:text-base md:w-full">Aprenda a usar o Instagram de maneira consistente para conhecer novas mulheres, conversar e marcar encontros. Em uma semana você vai transformar seu instagram em uma máquina, capaz de marcar dois ou mais encontros por mês.</p>
             </div>
-            <a href="https://pay.hotmart.com/E92520462X" className="text-white font-regular text-lg bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60 lg:h-20 lg:w-80"> Comece Agora!</a>
+            <a href="https://pay.hotmart.com/E92520462X" className="text-white text-lg bg-green h-20 w-80 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60"> Comece Agora!</a>
           </div>
         </div>
         <div className="h-0.5 bg-red">
@@ -95,7 +95,7 @@ export default function Home() {
           <p className='text-black lg:text-baseSm text-center md:w-[70%] 2xl:w-[55%] '>
             Não importa se você tem dinheiro ou não, se é baixo, se seu carro é ruim... Cara, isso tudo não importa. O que eu posso garantir é o seguinte: Estruturar seu Instagram direitinho, que em pouco tempo você está conversando com um monte de mulher.
           </p>
-          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60"> Comece já!</a>
+          <a href="https://pay.hotmart.com/E92520462X" className="text-white text-base bg-green h-12 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14"> Comece já!</a>
         </div>
       </section>
       <section id="fourth-section" className="">
@@ -118,7 +118,7 @@ export default function Home() {
                   Você já conversou com a mulher ali, chegou a hora. Vou te falar o que fazer, e quando der certo, você vai lembrar de mim e falar para si mesmo, bendito Rafael, onde você estava todo esse tempo?
                 </li>
               </ul>
-              <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 mb-4 hover:bg-green-hover md:h-14 md:w-60 md:mb-0"> Comece já!</a>
+              <a href="https://pay.hotmart.com/E92520462X" className="text-white text-base bg-green h-12 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14"> Comece já!</a>
             </div>
           </div>
         </div>
@@ -139,21 +139,23 @@ export default function Home() {
       </section>
       <section id="sixth-section" className="bg-white p-5">
         <h3 className="text-red text-base font-bold mb-2 text-center md:mb-12 md:text-left md:text-lg md:px-14 md:mt-14">Conheça o curso</h3>
-        <div className="lg:flex lg:items-center lg:justify-center">
-          <Carousel
-            showStatus={false}
-            className="sm:hidden"
-          >
-            <Card type="red" title="Bônus 01">
-              Canal no Telegram para dicas diárias além de lives para te ajudar ainda mais.
-            </Card>
-            <Card type="red" title="Bônus 02">
-              O curso escrito para você poder ler de forma sigilosa.
-            </Card>
-            <Card type="red" title="Bônus 03">
-              um e-book que te dará outras dicas incríveis.
-            </Card>
-          </Carousel>
+        <div className="flex justify-center lg:flex lg:items-center lg:justify-center">
+          <div className="w-72">
+            <Carousel
+              showStatus={false}
+              className="sm:hidden"
+            >
+              <Card type="red" title="Bônus 01">
+                Canal no Telegram para dicas diárias além de lives para te ajudar ainda mais.
+              </Card>
+              <Card type="red" title="Bônus 02">
+                O curso escrito para você poder ler de forma sigilosa.
+              </Card>
+              <Card type="red" title="Bônus 03">
+                um e-book que te dará outras dicas incríveis.
+              </Card>
+            </Carousel>
+          </div>
 
           <div className="hidden gap-20 md:flex md:mb-14">
             <Card type="red" title="Bônus 01">
@@ -171,26 +173,27 @@ export default function Home() {
           <h3 className="text-red text-base font-bold mb-2 text-center md:mb-8">APRENDA A CONQUISTAR MULHERES USANDO AS REDES SOCIAIS
           </h3>
           <p className="text-center text-black text-sm mb-4 2xl:text-baseSm">Para transformar seu Instagram em uma máquina de paquera infalível.<br />
-            <strong>Somente 89,90 à vista</strong><br />
+            <strong className="text-baseSm">Somente 89,90 à vista</strong><br />
             <span className="text-base">ou</span><br />
-            <strong>12 vezes no cartão</strong><br />
+            <strong className="text-baseSm">12 vezes no cartão</strong><br />
             Só isso? Sim. Te falei que meu objetivo é ajudar outras pessoas.<br />
             E aí, vamos aumentar a autoestima masculina juntos?
           </p>
-          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold bg-green h-12 w-40 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60 mb-6"> Comece Agora!</a>
+          <a href="https://pay.hotmart.com/E92520462X" className="text-white text-base bg-green h-12 w-60 flex justify-center items-center rounded-full transition-colors duration-200 mb-4 hover:bg-green-hover md:h-14"> Comece Agora!</a>
         </div>
-        <div className="py-4 md:ml-20 md:mt-4 md:w-[70%] md:flex md:flex-col md:flex-start 2xl:ml-40 2xl:w-full">
-          <strong className="text-red text-base">Garantia</strong>
-          <p className="text-black text-justify text-sm  2xl:text-baseSm">Você tem garantia incondicional de 07 dias. O risco é todo meu, se você não gostar, só pedir seu dinheiro de volta em até 07 dias após a compra que eu te devolvo sem nem perguntar por quê.
-          </p>
+        <div className="flex items-center">
+          <div className="py-4 md:ml-20 md:mt-4 md:w-[70%] md:flex md:flex-col md:flex-start 2xl:ml-40 2xl:w-full">
+            <strong className="text-red text-base">Garantia</strong>
+            <p className="text-black text-justify text-sm  2xl:text-baseSm">Você tem garantia incondicional de 07 dias. O risco é todo meu, se você não gostar, só pedir seu dinheiro de volta em até 07 dias após a compra que eu te devolvo sem nem perguntar por quê.
+            </p>
+          </div>
+          <Image src={garantia} alt="garantia" className="h-20 w-20 object-cover ml-4"></Image>
         </div>
-        <hr />
       </section>
-      <section id="eighth" className="bg-white md:flex md:items-center md:pt-10">
+      <section id="eighth" className="bg-white flex flex-col items-center md:flex md:items-center md:pt-10">
         <div className="flex items-center flex-col p-4 pt-0 lg:w-3/4 gap-8 lg:gap-12">
           <p className="text-black text-sm text-justify xl:text-baseSm md:w-[80%]">
             Estou compartilhando aqui com vocês algumas abordagens e desenvolvimento de conversas com mulheres que nem conheço ainda pessoalmente, mas certamente vou conhecer e pegar com toda certeza. Quando o assunto se desenvolve nesse sentido, após eu aplicar minha técnica e a mulher receber isso positivamente a ponto de continuar o assunto, a grande tendência é o sucesso com ela.</p>
-          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold mb-10 md:mb-0 bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center md:h-16 md:w-48"> Comece Agora <br /> Mesmo!</a>
         </div>
         <div className="w-[70%] md:px-10 2xl:w-[45%]">
           <Carousel
@@ -229,6 +232,7 @@ export default function Home() {
             <Image alt="print" src={prints.print7} className="shadow-sm px-2" />
           </Carousel>
         </div>
+        <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold mb-10 md:mb-0 bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center md:h-16 md:w-48"> Comece Agora <br /> Mesmo!</a>
       </section>
       <section id="nineth" className="bg-[#181818] pb-10 py-6 p-8 md:p-20">
         <h3 className="text-[#FF0000] text-base font-bold text-left md:mb-12 md:text-left md:text-lg">Perguntas e Respostas:</h3>
