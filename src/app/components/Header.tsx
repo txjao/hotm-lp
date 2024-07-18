@@ -1,7 +1,7 @@
 
 export default function Header() {
     return (
-        <header className="fixed z-10 flex h-[5vh] w-full justify-center items-center py-10 bg-black md:justify-end md:p-10">
+        <header className="absolute z-10 flex h-[5vh] w-full justify-center items-center py-10 bg-black md:justify-end md:p-10">
             <div className="flex gap-10">
                 <a href="#third-section" className="text-yellow text-sm underline hover:relative hover:bottom-px 
             2xl:text-base xl:text-base lg:text-baseSm md:text-sm"> Saiba Mais </a>
