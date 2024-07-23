@@ -18,7 +18,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 export default function Home() {
   return (
     <main className="">
-      <Header />
       <section className="first-section">
         <div id="banner" className={`flex justify-center items-center pb-6 md:items-center bg-[url('../assets/bannerHero.png')] bg-no-repeat bg-cover bg-center h-[99.8vh]`}>
           <div className="flex items-center flex-col gap-9 2xl:gap-12 md:px-6 lg:px-0">
@@ -26,9 +25,9 @@ export default function Home() {
               <h1 className="text-base font-bold text-yellow w-full text-center 
               2xl:w-[80%] 2xl:text-xl  xl:w-[80%] xl:text-lg lg:text-lg lg:w-[80%] md:text-base md:w-full mb-4">JÁ IMAGINOU APRENDER A CONQUISTAR LINDAS MULHERES UTILIZANDO SEU INSTAGRAM?</h1>
               <p className="text-sm w-[80%] text-center 
-              xl:text-md xl:w-[80%] lg:text-base lg:w-[80%] md:text-base md:w-full">Aprenda a usar o Instagram de maneira consistente para conhecer novas mulheres, conversar e marcar encontros. Em uma semana você vai transformar seu instagram em uma máquina, capaz de marcar dois ou mais encontros por mês.</p>
+              xl:text-md xl:w-[80%] lg:text-base lg:w-[80%] md:text-sm md:w-full">Aprenda a usar o Instagram de maneira consistente para conhecer novas mulheres, conversar e marcar encontros. Em uma semana você vai transformar seu instagram em uma máquina, capaz de marcar dois ou mais encontros por mês.</p>
             </div>
-            <a href="https://pay.hotmart.com/E92520462X" className="text-white text-lg bg-green h-20 w-80 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover md:h-14 md:w-60"> Comece Agora!</a>
+            <a href="https://pay.hotmart.com/E92520462X" className="text-white text-lg bg-green h-20 w-80 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-green-hover"> Comece Agora!</a>
           </div>
         </div>
         <div className="h-0.5 bg-red">
@@ -140,7 +139,7 @@ export default function Home() {
       <section id="sixth-section" className="bg-white p-5">
         <h3 className="text-red text-base font-bold mb-2 text-center md:mb-12 md:text-left md:text-lg md:px-14 md:mt-14">Conheça o curso</h3>
         <div className="flex justify-center lg:flex lg:items-center lg:justify-center">
-          <div className="w-72">
+          <div className="w-72 md:w-auto">
             <Carousel
               showStatus={false}
               className="sm:hidden"
@@ -157,7 +156,7 @@ export default function Home() {
             </Carousel>
           </div>
 
-          <div className="hidden gap-20 md:flex md:mb-14">
+          <div className="hidden gap-20 md:flex md:mb-14 w-full lg:w-auto">
             <Card type="red" title="Bônus 01">
               Canal no Telegram para dicas diárias além de lives para te ajudar ainda mais.
             </Card>
@@ -181,7 +180,7 @@ export default function Home() {
           </p>
           <a href="https://pay.hotmart.com/E92520462X" className="text-white text-base bg-green h-12 w-60 flex justify-center items-center rounded-full transition-colors duration-200 mb-4 hover:bg-green-hover md:h-14"> Comece Agora!</a>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center px-6">
           <div className="py-4 md:ml-20 md:mt-4 md:w-[70%] md:flex md:flex-col md:flex-start 2xl:ml-40 2xl:w-full">
             <strong className="text-red text-base">Garantia</strong>
             <p className="text-black text-justify text-sm  2xl:text-baseSm">Você tem garantia incondicional de 07 dias. O risco é todo meu, se você não gostar, só pedir seu dinheiro de volta em até 07 dias após a compra que eu te devolvo sem nem perguntar por quê.
@@ -190,10 +189,11 @@ export default function Home() {
           <Image src={garantia} alt="garantia" className="h-20 w-20 object-cover ml-4"></Image>
         </div>
       </section>
-      <section id="eighth" className="bg-white flex flex-col items-center md:flex md:items-center md:pt-10">
-        <div className="flex items-center flex-col p-4 pt-0 lg:w-3/4 gap-8 lg:gap-12">
+      <section id="eighth" className="bg-white flex flex-col items-center md:flex md:flex-row md:items-center md:pt-10">
+        <div className="flex items-center flex-col px-8 py-4 pt-0 lg:w-3/4 gap-8 lg:gap-12">
           <p className="text-black text-sm text-justify xl:text-baseSm md:w-[80%]">
             Estou compartilhando aqui com vocês algumas abordagens e desenvolvimento de conversas com mulheres que nem conheço ainda pessoalmente, mas certamente vou conhecer e pegar com toda certeza. Quando o assunto se desenvolve nesse sentido, após eu aplicar minha técnica e a mulher receber isso positivamente a ponto de continuar o assunto, a grande tendência é o sucesso com ela.</p>
+          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold mb-10 md:mb-0 bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center md:h-16 md:w-48"> Comece Agora <br /> Mesmo!</a>
         </div>
         <div className="w-[70%] md:px-10 2xl:w-[45%]">
           <Carousel
@@ -223,16 +223,15 @@ export default function Home() {
             centerMode={true}
             centerSlidePercentage={30}
             className="red hidden lg:block gap-4">
-            <Image alt="print" src={prints.print1} className="shadow-sm px-2" />
-            <Image alt="print" src={prints.print2} className="shadow-sm px-2" />
-            <Image alt="print" src={prints.print3} className="shadow-sm px-2" />
-            <Image alt="print" src={prints.print4} className="shadow-sm px-2" />
-            <Image alt="print" src={prints.print5} className="shadow-sm px-2" />
-            <Image alt="print" src={prints.print6} className="shadow-sm px-2" />
-            <Image alt="print" src={prints.print7} className="shadow-sm px-2" />
+            <Image alt="print" src={prints.print1} className="px-2" />
+            <Image alt="print" src={prints.print2} className="px-2" />
+            <Image alt="print" src={prints.print3} className="px-2" />
+            <Image alt="print" src={prints.print4} className="px-2" />
+            <Image alt="print" src={prints.print5} className="px-2" />
+            <Image alt="print" src={prints.print6} className="px-2" />
+            <Image alt="print" src={prints.print7} className="px-2" />
           </Carousel>
         </div>
-        <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold mb-10 md:mb-0 bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center md:h-16 md:w-48"> Comece Agora <br /> Mesmo!</a>
       </section>
       <section id="nineth" className="bg-[#181818] pb-10 py-6 p-8 md:p-20">
         <h3 className="text-[#FF0000] text-base font-bold text-left md:mb-12 md:text-left md:text-lg">Perguntas e Respostas:</h3>
