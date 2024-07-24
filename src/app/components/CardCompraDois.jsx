@@ -8,9 +8,9 @@ export default function CardCompraDois() {
             <div className="bg-green rounded-t-lg p-4 w-full">
                 <p className="text-white font-semibold text-center">BOLETO OU PIX - APENAS À VISTA</p>
             </div>
-            <div className="flex flex-1 py-5 gap-2 items-center justify-center">
+            <div className="flex flex-1 py-5 gap-4 items-center justify-center">
                 <Image alt="visa boleto" src={boleto} className="object-fill w-14 h-8"></Image>
-                <Image alt="visa pix" src={pix} className="object-fill w-20 h-8"></Image>
+                <Image alt="visa pix" src={pix} className="object-fill w-24 h-8"></Image>
             </div>
             <div className="px-1 pb-8 pt-6 text-center">
                 <a href="" className="py-4 px-6 lg:py-6 lg:px-12 bg-yellow hover:bg-yellow-hover duration-200 rounded-full w-full">COMPRE COM BOLETO OU PIX</a>
