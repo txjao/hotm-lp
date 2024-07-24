@@ -174,12 +174,12 @@ export default function Home() {
           </h3>
           <p className="text-center text-black text-sm mb-4 xl:text-baseSm">Para transformar seu Instagram em uma máquina de paquera infalível.</p>
           <div className="flex flex-col items-center md:flex-row md:gap-4">
-              <CardCompraUm />
-              <span className="text-base text-black">ou</span>
-              <CardCompraDois />
-            </div>
+            <CardCompraUm />
+            <span className="text-base text-black">ou</span>
+            <CardCompraDois />
+          </div>
           <p className="text-center text-black text-sm mb-4 xl:text-baseSm">
-            Só isso? Sim. Te falei que meu objetivo é ajudar outras pessoas. <br/>
+            Só isso? Sim. Te falei que meu objetivo é ajudar outras pessoas. <br />
             E aí, vamos aumentar a autoestima masculina juntos?
           </p>
         </div>
@@ -193,11 +193,6 @@ export default function Home() {
         </div>
       </section>
       <section id="eighth" className="bg-white flex flex-col items-center md:flex md:flex-row md:items-center md:pt-10">
-        <div className="flex items-center flex-col px-8 py-4 pt-0 lg:w-3/4 gap-8 lg:gap-12">
-          <p className="text-black text-sm text-justify xl:text-baseSm md:w-[80%]">
-            Estou compartilhando aqui com vocês algumas abordagens e desenvolvimento de conversas com mulheres que nem conheço ainda pessoalmente, mas certamente vou conhecer e pegar com toda certeza. Quando o assunto se desenvolve nesse sentido, após eu aplicar minha técnica e a mulher receber isso positivamente a ponto de continuar o assunto, a grande tendência é o sucesso com ela.</p>
-          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold mb-10 md:mb-0 bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center md:h-16 md:w-48"> Comece Agora <br /> Mesmo!</a>
-        </div>
         <div className="w-[70%] md:px-10 2xl:w-[45%]">
           <Carousel
             interval={5000}
@@ -234,6 +229,11 @@ export default function Home() {
             <Image alt="print" src={prints.print6} className="px-2" />
             <Image alt="print" src={prints.print7} className="px-2" />
           </Carousel>
+        </div>
+        <div className="flex items-center flex-col px-8 py-4 pt-0 lg:w-3/4 gap-8 lg:gap-12">
+          <p className="text-black text-sm text-justify xl:text-baseSm md:w-[80%]">
+            Estou compartilhando aqui com vocês algumas abordagens e desenvolvimento de conversas com mulheres que nem conheço ainda pessoalmente, mas certamente vou conhecer e pegar com toda certeza. Quando o assunto se desenvolve nesse sentido, após eu aplicar minha técnica e a mulher receber isso positivamente a ponto de continuar o assunto, a grande tendência é o sucesso com ela.</p>
+          <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold mb-10 md:mb-0 bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center md:h-16 md:w-48"> Comece Agora <br /> Mesmo!</a>
         </div>
       </section>
       <section id="nineth" className="bg-[#181818] pb-10 py-6 p-8 md:p-20">
