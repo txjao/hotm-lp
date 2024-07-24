@@ -14,6 +14,19 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
+import pagseguro from "../assets/pagseguro.png";
+import americanExpress from "../assets/amex-american-express.png";
+import bancoBrasil from "../assets/banco-do-brasil.png";
+import boleto from "../assets/boleto.png";
+import bradesco from "../assets/bradesco.png";
+import elo from "../assets/elo.png";
+import hipercard from "../assets/hipercard.png";
+import itau from "../assets/itau.png";
+import mastercard from "../assets/mastercard.png";
+import pix from "../assets/pix.png";
+import visa from "../assets/visa.png";
+
+
 
 export default function Home() {
   return (
@@ -36,7 +49,7 @@ export default function Home() {
       <section id="second-section">
         <div className="flex flex-col gap-4 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] 2xl:h-[35vh] md:bg-gradient-to-r md:flex-row">
           <Image alt="casal" src={bannerImage} className="md:w-[40%] object-cover" />
-          <div className="py-4 md:py-0 flex justify-center items-center text-justify flex-col gap-4">
+          <div className="flex py-4 justify-center items-center text-justify flex-col gap-4">
             <p className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">Foi essa a pergunta que um amigo me fez na academia em 2023. Percebi que eu tinha facilidade, enquanto a grande maioria dos homens ficavam para trás. <strong className="text-yellow font-semibold">Meu segredo: Nenhum, sou um cara normal, tenho carro, ganho normal</strong>. Só que eu uso o Instagram da melhor forma possível para isso. Tem gente que usa o Instagram para vender todo o tipo de coisa, usar para paquerar é só mais uma funcionalidade.
             </p>
             <p className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
@@ -46,11 +59,11 @@ export default function Home() {
         </div>
       </section>
       <section id="third-section">
-        <div className="flex flex-col bg-[#F5F5F5] md:justify-between md:h-[33vh] 2xl:h-[25vh] md:flex-row-reverse">
+        <div className="flex flex-col bg-[#F5F5F5] md:justify-between lg:h-[40vh] 2xl:h-[25vh] md:flex-row-reverse">
           <Image alt="casal" src={banner} className="md:w-[30%] object-cover lg:w-1/3" />
           <div className="flex justify-center w-full">
-            <div className="py-4 md:py-0 px-14 md:px-0 flex items-start justify-center flex-col md:w-2/3">
-              <strong className="text-red text-base mb-2 md:text-baseSm">Para quem é esse curso:</strong>
+            <div className="py-4 md:py-1 px-14 md:px-0 flex items-start justify-center flex-col md:w-2/3">
+              <strong className="text-red text-base pb-2 md:text-baseSm">Para quem é esse curso:</strong>
               <ul className="flex flex-col items-start gap-1 list-disc">
                 <li className="text-sm text-black xl:text-baseSm lg:text-sm md:text-xs">
                   Quem quer ter autoestima renovada;
@@ -68,9 +81,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 bg-black md:justify-between md:h-[33vh] 2xl:h-[25vh] md:flex-row-reverse">
+        <div className="flex flex-col gap-4 bg-black md:justify-between lg:h-[40vh] 2xl:h-[25vh] md:flex-row-reverse">
           <div className="flex justify-center w-full">
-            <div className="py-4 md:py-0 px-14 md:px-0 flex items-start justify-center flex-col md:w-2/3">
+            <div className="py-4 md:py-1 px-14 md:px-0 flex items-start justify-center flex-col md:w-2/3">
               <strong className="text-red text-base mb-2 md:text-baseSm">Para quem NÃO é esse curso:</strong>
               <ul className="flex flex-col items-start gap-1 list-disc">
                 <li className="text-sm text-white xl:text-baseSm lg:text-sm md:text-xs">
@@ -90,7 +103,7 @@ export default function Home() {
           </div>
           <Image alt="casal" src={image5} className="md:w-[30%] h-[25vh] md:h-full object-cover w-full lg:w-1/3 object-top" />
         </div>
-        <div className="flex flex-col gap-8 px-8 py-4 2xl:py-14 lg:py-20 items-center bg-[#F5F5F5] md:justify-between lg:h-[40vh] 2xl:h-[20vh]">
+        <div className="flex flex-col gap-8 px-8 py-4 2xl:py-14 lg:py-20 items-center bg-[#F5F5F5] md:justify-between 2xl:h-[20vh]">
           <p className='text-black lg:text-baseSm text-center md:w-[70%] 2xl:w-[55%] '>
             Não importa se você tem dinheiro ou não, se é baixo, se seu carro é ruim... Cara, isso tudo não importa. O que eu posso garantir é o seguinte: Estruturar seu Instagram direitinho, que em pouco tempo você está conversando com um monte de mulher.
           </p>
@@ -98,9 +111,9 @@ export default function Home() {
         </div>
       </section>
       <section id="fourth-section" className="">
-        <div className="flex flex-col pb-6 md:pb-0 gap-4 bg-red md:justify-between md:h-[100vh] md:flex-row-reverse 2xl:h-[45vh]">
-          <Image alt="casal" src={banner} className="md:w-[30%] object-cover md:object-left w-full h-full" />
-          <div className="flex justify-center">
+        <div className="flex flex-col pb-6 md:pb-0 gap-4 bg-red md:justify-between lg:h-[100vh] md:flex-row-reverse 2xl:h-[45vh]">
+          <Image alt="casal" src={banner} className="md:w-[30%] object-cover md:object-left w-full" />
+          <div className="flex justify-center py-4">
             <div className="flex items-center justify-center flex-col gap-4">
               <strong className="text-base mb-4">Como funciona meu método:</strong>
               <ul className="flex flex-col items-center gap-3 list-decimal">
@@ -169,6 +182,49 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center gap-3">
+
+
+          <div className="flex flex-col items-center justify-between shadow-xl py-4 rounded-b-lg gap-6 md:w-[550px]">
+            <div className="bg-green rounded-t-lg p-4 w-full">
+              <p className="text-white font-semibold text-center">CARTÃO DE CRÉDITO - ATÉ 12X</p>
+            </div>
+            <div className="flex flex-col gap-3 justify-center items-center px-6">
+              <Image alt="pagseguro logo" src={pagseguro} className="object-fill w-40 h-10"></Image>
+              <div className="flex flex-col md:flex-row gap-2 items-center justify-center">
+                <div className="flex flex-1 gap-2 items-center justify-center">
+                  <Image alt="mastercard logo" src={mastercard} className="object-fill w-14 h-10"></Image>
+                  <Image alt="hipercard logo" src={hipercard} className="object-fill w-16 h-7"></Image>
+                  <Image alt="elo logo" src={elo} className="object-fill w-14 h-5"></Image>
+                  <Image alt="itau logo" src={itau} className="object-fill w-10 h-10"></Image>
+                </div>
+                <div className="flex flex-1 gap-2 items-center justify-center">
+                  <Image alt="bradesco logo" src={bradesco} className="object-fill w-11 h-10"></Image>
+                  <Image alt="banco do Brasil logo" src={bancoBrasil} className="object-fill w-10 h-10"></Image>
+                  <Image alt="visa logo" src={visa} className="object-fill w-14 h-5"></Image>
+                  <Image alt="americanExpress logo" src={americanExpress} className="rounded-md object-fill w-12 h-12"></Image>
+                </div>
+              </div>
+            </div>
+            <div className="px-1 pb-8 pt-6 text-center">
+              <a href="" className="py-4 px-6 lg:py-6 lg:px-12 bg-yellow hover:bg-yellow-hover duration-200 rounded-full w-full">COMPRE COM O CARTÃO DE CRÉDITO</a>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center justify-between shadow-xl py-4 rounded-b-lg gap-6 md:w-[550px]">
+            <div className="bg-green rounded-t-lg p-4 w-full">
+              <p className="text-white font-semibold text-center">BOLETO OU PIX - APENAS À VISTA</p>
+            </div>
+            <div className="flex flex-1 py-5 gap-2 items-center justify-center">
+              <Image alt="visa boleto" src={boleto} className="object-fill w-14 h-8"></Image>
+              <Image alt="visa pix" src={pix} className="object-fill w-20 h-8"></Image>
+            </div>
+            <div className="px-1 pb-8 pt-6 text-center">
+              <a href="" className="py-4 px-6 lg:py-6 lg:px-12 bg-yellow hover:bg-yellow-hover duration-200 rounded-full w-full">COMPRE COM BOLETO OU PIX</a>
+            </div>
+          </div>
+
+
+
           <h3 className="text-red text-base font-bold mb-2 text-center md:mb-8">APRENDA A CONQUISTAR MULHERES USANDO AS REDES SOCIAIS
           </h3>
           <p className="text-center text-black text-sm mb-4 2xl:text-baseSm">Para transformar seu Instagram em uma máquina de paquera infalível.<br />
