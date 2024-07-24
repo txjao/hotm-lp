@@ -6,7 +6,7 @@ export default function CardCompraDois() {
     return (
         <div className="flex flex-col items-center justify-between shadow-xl py-4 rounded-b-lg gap-6 lg:w-[550px] w-[350px] h-[350px]">
             <div className="bg-green rounded-t-lg p-4 w-full">
-                <p className="text-white font-semibold text-center">BOLETO OU PIX - APENAS À VISTA</p>
+                <p className="text-white font-semibold text-center uppercase">Somente 89,90 à vista</p>
             </div>
             <div className="flex flex-1 py-5 gap-4 items-center justify-center">
                 <Image alt="visa boleto" src={boleto} className="object-fill w-14 h-8"></Image>

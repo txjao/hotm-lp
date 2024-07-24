@@ -172,23 +172,21 @@ export default function Home() {
         <div className="flex flex-col items-center gap-3">
           <h3 className="text-red text-base font-bold mb-2 text-center md:mb-8">APRENDA A CONQUISTAR MULHERES USANDO AS REDES SOCIAIS
           </h3>
-          <p className="text-center text-black text-sm mb-4 2xl:text-baseSm">Para transformar seu Instagram em uma máquina de paquera infalível.<br />
-            <strong className="text-baseSm">Somente 89,90 à vista</strong><br />
-            <span className="text-base">ou</span><br />
-            <strong className="text-baseSm">12 vezes no cartão</strong><br />
-            Só isso? Sim. Te falei que meu objetivo é ajudar outras pessoas.<br />
+          <p className="text-center text-black text-sm mb-4 xl:text-baseSm">Para transformar seu Instagram em uma máquina de paquera infalível.</p>
+          <div className="flex flex-col items-center md:flex-row md:gap-4">
+              <CardCompraUm />
+              <span className="text-base text-black">ou</span>
+              <CardCompraDois />
+            </div>
+          <p className="text-center text-black text-sm mb-4 xl:text-baseSm">
+            Só isso? Sim. Te falei que meu objetivo é ajudar outras pessoas. <br/>
             E aí, vamos aumentar a autoestima masculina juntos?
           </p>
-          {/* <a href="https://pay.hotmart.com/E92520462X" className="text-white text-base bg-green h-12 w-60 flex justify-center items-center rounded-full transition-colors duration-200 mb-4 hover:bg-green-hover md:h-14"> Comece Agora!</a> */}
-        </div>
-        <div className="flex flex-col py-6 lg:flex-row gap-4 lg:gap-14 2xl:gap-24 items-center justify-center lg:pb-10">
-          <CardCompraUm />
-          <CardCompraDois />
         </div>
         <div className="flex items-center px-6">
           <div className="py-4 md:ml-20 md:mt-4 md:w-[70%] md:flex md:flex-col md:flex-start 2xl:ml-40 2xl:w-full">
             <strong className="text-red text-base">Garantia</strong>
-            <p className="text-black text-justify text-sm  2xl:text-baseSm">Você tem garantia incondicional de 07 dias. O risco é todo meu, se você não gostar, só pedir seu dinheiro de volta em até 07 dias após a compra que eu te devolvo sem nem perguntar por quê.
+            <p className="text-black text-sm text-justify w-4/5 2xl:text-baseSm">Você tem garantia incondicional de 07 dias. O risco é todo meu, se você não gostar, só pedir seu dinheiro de volta em até 07 dias após a compra que eu te devolvo sem nem perguntar por quê.
             </p>
           </div>
           <Image src={garantia} alt="garantia" className="h-20 w-20 object-cover ml-4"></Image>
