@@ -34,7 +34,7 @@ export default function CardCompraUm() {
           </div>
         </div>
         <div className="px-1 pb-8 pt-6 text-center">
-          <a href="" className="py-4 px-6 lg:py-6 lg:px-12 bg-yellow hover:bg-yellow-hover duration-200 rounded-full w-full">COMPRE COM O CARTÃO DE CRÉDITO</a>
+          <a href="" className="py-4 px-6 lg:py-6 lg:px-12 bg-yellow hover:bg-yellow-hover duration-200 rounded-full w-full">Aqduira já!</a>
         </div>
       </div>
     )
