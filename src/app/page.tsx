@@ -9,24 +9,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import prints from "@/utils/handlePrints";
 import Header from "./components/Header";
 import Card from "./components/Card";
+import CardCompraUm from "./components/CardCompraUm";
+import CardCompraDois from "./components/CardCompraDois";
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
-import pagseguro from "../assets/pagseguro.png";
-import americanExpress from "../assets/amex-american-express.png";
-import bancoBrasil from "../assets/banco-do-brasil.png";
-import boleto from "../assets/boleto.png";
-import bradesco from "../assets/bradesco.png";
-import elo from "../assets/elo.png";
-import hipercard from "../assets/hipercard.png";
-import itau from "../assets/itau.png";
-import mastercard from "../assets/mastercard.png";
-import pix from "../assets/pix.png";
-import visa from "../assets/visa.png";
-
-
 
 export default function Home() {
   return (
@@ -182,49 +170,6 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center gap-3">
-
-
-          <div className="flex flex-col items-center justify-between shadow-xl py-4 rounded-b-lg gap-6 md:w-[550px]">
-            <div className="bg-green rounded-t-lg p-4 w-full">
-              <p className="text-white font-semibold text-center">CARTÃO DE CRÉDITO - ATÉ 12X</p>
-            </div>
-            <div className="flex flex-col gap-3 justify-center items-center px-6">
-              <Image alt="pagseguro logo" src={pagseguro} className="object-fill w-40 h-10"></Image>
-              <div className="flex flex-col md:flex-row gap-2 items-center justify-center">
-                <div className="flex flex-1 gap-2 items-center justify-center">
-                  <Image alt="mastercard logo" src={mastercard} className="object-fill w-14 h-10"></Image>
-                  <Image alt="hipercard logo" src={hipercard} className="object-fill w-16 h-7"></Image>
-                  <Image alt="elo logo" src={elo} className="object-fill w-14 h-5"></Image>
-                  <Image alt="itau logo" src={itau} className="object-fill w-10 h-10"></Image>
-                </div>
-                <div className="flex flex-1 gap-2 items-center justify-center">
-                  <Image alt="bradesco logo" src={bradesco} className="object-fill w-11 h-10"></Image>
-                  <Image alt="banco do Brasil logo" src={bancoBrasil} className="object-fill w-10 h-10"></Image>
-                  <Image alt="visa logo" src={visa} className="object-fill w-14 h-5"></Image>
-                  <Image alt="americanExpress logo" src={americanExpress} className="rounded-md object-fill w-12 h-12"></Image>
-                </div>
-              </div>
-            </div>
-            <div className="px-1 pb-8 pt-6 text-center">
-              <a href="" className="py-4 px-6 lg:py-6 lg:px-12 bg-yellow hover:bg-yellow-hover duration-200 rounded-full w-full">COMPRE COM O CARTÃO DE CRÉDITO</a>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center justify-between shadow-xl py-4 rounded-b-lg gap-6 md:w-[550px]">
-            <div className="bg-green rounded-t-lg p-4 w-full">
-              <p className="text-white font-semibold text-center">BOLETO OU PIX - APENAS À VISTA</p>
-            </div>
-            <div className="flex flex-1 py-5 gap-2 items-center justify-center">
-              <Image alt="visa boleto" src={boleto} className="object-fill w-14 h-8"></Image>
-              <Image alt="visa pix" src={pix} className="object-fill w-20 h-8"></Image>
-            </div>
-            <div className="px-1 pb-8 pt-6 text-center">
-              <a href="" className="py-4 px-6 lg:py-6 lg:px-12 bg-yellow hover:bg-yellow-hover duration-200 rounded-full w-full">COMPRE COM BOLETO OU PIX</a>
-            </div>
-          </div>
-
-
-
           <h3 className="text-red text-base font-bold mb-2 text-center md:mb-8">APRENDA A CONQUISTAR MULHERES USANDO AS REDES SOCIAIS
           </h3>
           <p className="text-center text-black text-sm mb-4 2xl:text-baseSm">Para transformar seu Instagram em uma máquina de paquera infalível.<br />
@@ -234,7 +179,11 @@ export default function Home() {
             Só isso? Sim. Te falei que meu objetivo é ajudar outras pessoas.<br />
             E aí, vamos aumentar a autoestima masculina juntos?
           </p>
-          <a href="https://pay.hotmart.com/E92520462X" className="text-white text-base bg-green h-12 w-60 flex justify-center items-center rounded-full transition-colors duration-200 mb-4 hover:bg-green-hover md:h-14"> Comece Agora!</a>
+          {/* <a href="https://pay.hotmart.com/E92520462X" className="text-white text-base bg-green h-12 w-60 flex justify-center items-center rounded-full transition-colors duration-200 mb-4 hover:bg-green-hover md:h-14"> Comece Agora!</a> */}
+        </div>
+        <div className="flex flex-col py-6 lg:flex-row gap-4 lg:gap-14 2xl:gap-24 items-center justify-center lg:pb-10">
+          <CardCompraUm />
+          <CardCompraDois />
         </div>
         <div className="flex items-center px-6">
           <div className="py-4 md:ml-20 md:mt-4 md:w-[70%] md:flex md:flex-col md:flex-start 2xl:ml-40 2xl:w-full">
