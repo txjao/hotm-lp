@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -13,16 +13,20 @@ html {
   width: 100%;
 }
 
-body{
+body {
   background-color: #000;
   color: #fff;
 }
 
 .red .carousel .control-dots .dot {
-  background: #9a0b0b!important;
+  background: #9a0b0b !important;
 }
 
-.MuiButtonBase-root .MuiAccordionSummary-root .MuiAccordionSummary-gutters .css-1f773le-MuiButtonBase-root-MuiAccordionSummary-root{
+.MuiButtonBase-root .MuiAccordionSummary-root .MuiAccordionSummary-gutters .css-1f773le-MuiButtonBase-root-MuiAccordionSummary-root {
   background-color: #181818;
   color: #fff;
+}
+
+.carousel-root>.carousel-slider {
+  border-radius: 4px;
 }
