@@ -4,6 +4,7 @@ import { Jost } from "next/font/google";
 import "./globals.css";
 import { Suspense } from "react";
 import { FacebookPixelEvents } from "./components/PixelEvents";
+import { GoogleTagManager } from '@next/third-parties/google' 
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -21,11 +22,11 @@ export default function RootLayout({
     <html lang="pt-br">
       <body>
         {children}
-
         <Suspense fallback={null}>
           <FacebookPixelEvents />
         </Suspense>
       </body>
+      <GoogleTagManager gtmId="GTM-PX9LFK4T" />
     </html>
   );
 }
