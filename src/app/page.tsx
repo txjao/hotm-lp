@@ -6,6 +6,7 @@ import garantia from "../assets/garantia.webp";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import prints from "@/utils/handlePrints";
+import casalbar from "../assets/casal-bar.jpg";
 import Card from "./components/Card";
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -15,7 +16,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="md:w-[100vw]">
       <section className="first-section">
         <div id="banner" className={`flex justify-center items-center pb-6 md:items-center bg-[url('../assets/bannerHero.png')] bg-no-repeat bg-cover bg-center h-[99.8vh]`}>
           <div className="flex items-center flex-col gap-9 2xl:gap-12 md:px-6 lg:px-0">
@@ -32,7 +33,7 @@ export default function Home() {
         </div>
       </section>
       <section id="second-section">
-        <div className="flex flex-col gap-4 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] 2xl:h-[35vh] md:bg-gradient-to-r md:flex-row">
+        <div className="flex flex-col gap-4 bg-gradient-to-b from-black via-black to-red md:justify-between md:h-[50vh] lg:h-[80vh] 2xl:h-[35vh] md:bg-gradient-to-r md:flex-row">
           <Image alt="casal" src={bannerImage} className="md:w-[40%] object-cover" />
           <div className="py-4 md:py-0 flex justify-center items-center text-justify flex-col gap-4">
             <p className="text-sm w-[80%] xl:text-baseSm lg:text-sm md:text-xs">Foi essa a pergunta que um amigo me fez na academia em 2023. Percebi que eu tinha facilidade, enquanto a grande maioria dos homens ficavam para trás. <strong className="text-yellow font-semibold">Meu segredo: Nenhum, sou um cara normal, tenho carro, ganho normal</strong>. Só que eu uso o Instagram da melhor forma possível para isso. Tem gente que usa o Instagram para vender todo o tipo de coisa, usar para paquerar é só mais uma funcionalidade.
@@ -44,7 +45,7 @@ export default function Home() {
         </div>
       </section>
       <section id="third-section">
-        <div className="flex flex-col bg-[#F5F5F5] md:justify-between md:h-[33vh] 2xl:h-[25vh] md:flex-row-reverse">
+        <div className="flex flex-col bg-[#F5F5F5] md:justify-between md:h-[33vh] lg:h-[50vh] md:flex-row-reverse">
           <Image alt="casal" src={banner} className="md:w-[30%] object-cover lg:w-1/3" />
           <div className="flex justify-center w-full">
             <div className="py-4 md:py-0 px-14 md:px-0 flex items-start justify-center flex-col md:w-2/3">
@@ -66,7 +67,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 bg-black md:justify-between md:h-[33vh] 2xl:h-[25vh] md:flex-row-reverse">
+        <div className="flex flex-col gap-4 bg-black md:justify-between md:h-[33vh] lg:h-[50vh] md:flex-row-reverse">
           <div className="flex justify-center w-full">
             <div className="py-4 md:py-0 px-14 md:px-0 flex items-start justify-center flex-col md:w-2/3">
               <strong className="text-red text-base mb-2 md:text-baseSm">Para quem NÃO é esse curso:</strong>
@@ -86,9 +87,9 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <Image alt="casal" src={''} className="md:w-[30%] h-[25vh] md:h-full object-cover w-full lg:w-1/3 object-center" />
+          <Image alt="casal" src={casalbar} className="md:w-[30%] h-[25vh] md:h-full object-cover w-full lg:w-1/3 object-center" />
         </div>
-        <div className="flex flex-col gap-8 px-8 py-4 2xl:py-14 lg:py-20 items-center bg-[#F5F5F5] md:justify-between lg:h-[40vh] 2xl:h-[20vh]">
+        <div className="flex flex-col gap-8 px-8 py-4 2xl:py-14 lg:py-20 items-center bg-[#F5F5F5] md:justify-between lg:h-[60vh] 2xl:h-[30vh]">
           <p className='text-black lg:text-baseSm text-center md:w-[70%] 2xl:w-[55%] '>
             Não importa se você tem dinheiro ou não, se é baixo, se seu carro é ruim... Cara, isso tudo não importa. O que eu posso garantir é o seguinte: Estruturar seu Instagram direitinho, que em pouco tempo você está conversando com um monte de mulher.
           </p>
@@ -96,21 +97,21 @@ export default function Home() {
         </div>
       </section>
       <section id="fourth-section" className="">
-        <div className="flex flex-col pb-6 md:pb-0 gap-4 bg-red md:justify-between md:h-[100vh] md:flex-row-reverse 2xl:h-[45vh]">
+        <div className="flex flex-col pb-6 md:pb-0 gap-4 bg-red md:justify-between md:h-[100vh] md:flex-row-reverse 2xl:h-[80vh]">
           <Image alt="casal" src={banner} className="md:w-[30%] object-cover md:object-left w-full h-full" />
-          <div className="flex justify-center">
+          <div className="flex justify-center lg:py-4">
             <div className="flex items-center justify-center flex-col gap-4">
-              <strong className="text-base mb-4">Como funciona meu método:</strong>
+              <strong className="text-base mb-4 lg:mb-0">Como funciona meu método:</strong>
               <ul className="flex flex-col items-center gap-3 list-decimal">
-                <li className="text-sm text-justify w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                <li className="text-sm text-justify w-[80%] lg:text-sm md:text-xs">
                   <strong className="text-yellow font-semibold mr-2">Preparação: </strong>
                   Aqui você vai melhorar sua aparência e seu Instagram para você conseguir entrar no mercado. Todo mundo sabe que a rede social é onde as pessoas postam a sua melhor versão, que nem sempre é verdade, uma verdadeira vitrine. Isso é errado? Não sei, mas é o que as pessoas fazem e você devia fazer também. Vou abrir a caixa preta com você do que funciona para mim, tipos de postagem, stories, textos... A mulher vai entrar no seu perfil e ter vontade de te conhecer.
                 </li>
-                <li className="text-sm text-justify w-[80%] xl:text-baseSm lg:text-sm md:text-xs">
+                <li className="text-sm text-justify w-[80%] lg:text-sm md:text-xs">
                   <strong className="text-yellow font-semibold mr-2">Abordagem: </strong>
                   Vou ensinar o que você precisa fazer para chamar atenção, agir como um caçador, ter paciência, entender quando é a hora de conversar sem ser afoito. 90% dos caras erram justamente nessa parte. Colocam mulher num pedestal e ficam atrás dela. Você vai aprender a ter a fenece para trocar uma ideia e marcar um encontro num barzinho ou até num motel.
                 </li>
-                <li className="text-sm text-justify w-[80%] xl:text-baseSm lg:text-sm md:text-xs mb-6">
+                <li className="text-sm text-justify w-[80%] lg:text-sm md:text-xs mb-6 lg:mb-0">
                   <strong className="text-yellow font-semibold mr-2">Finalização: </strong>
                   Você já conversou com a mulher ali, chegou a hora. Vou te falar o que fazer, e quando der certo, você vai lembrar de mim e falar para si mesmo, bendito Rafael, onde você estava todo esse tempo?
                 </li>
@@ -121,7 +122,7 @@ export default function Home() {
         </div>
       </section>
       <section id="fifth-section">
-        <div className="lg:h-[60vh] bg-white flex flex-col text-justify justify-center gap-4 py-4 px-8 lg:py-0 md:px-28 2xl:h-[25vh]">
+        <div className="lg:h-[80vh] bg-white flex flex-col text-justify justify-center gap-4 py-4 px-8 lg:py-0 md:px-28 2xl:h-[35vh]">
           <h3 className="text-red text-base font-semibold mb-2 text-center">Por que criei esse curso?</h3>
           <p className="text-black text-sm mb-4 font-medium">Eu cansei de ver caras legais que não conseguiam simplesmente conversar com mulheres. Com autoestima lá em baixo, mas com potencial. Eu literalmente criei isso aqui para ajudar as pessoas, ajudar você. Então, usa para o bem tá!!
             Esse curso é livre de mentirada</p>
@@ -129,14 +130,14 @@ export default function Home() {
             Você já viu esses cursos de paquera onde falam que você vai hipnotizar, apertar botões na mulher, que ela vai ficar vidrada em você, esse monte de baboseiras. E tem piores tá !!! tem aqueles que dizem que você precisa aprender aquelas cantadas infalíveis, que elas irão ficar malucas na sua, pessoal, pelo amor de Deus, que mulher gosta de cantada idiota? Mulher de verdade, curte uma boa conversa, uma abordagem respeitosa e é isso que irei te ensinar.
             A gente sabe que isso tudo é mentira. Aqui eu vou te ensinar o que funciona na real, sem perda de tempo, sem desrespeitar o seu dinheiro. Você vai participar de uma comunidade onde vai poder enviar suas dúvidas e vamos responder. Olha o preço do curso!! Meu objetivo é te ajudar.</p>
         </div>
-        <div className={`lg:h-[40vh] flex flex-col py-4 items-center justify-center bg-terno bg-cover bg-center 2xl:h-[25vh]`}>
+        <div className={`lg:h-[60vh] flex flex-col py-4 items-center justify-center bg-terno bg-cover bg-center 2xl:h-[35vh]`}>
           <h3 className="text-base font-semibold mb-2 text-center">Quem sou eu?</h3>
           <p className="text-white py-6 px-8 md:px-0 md:w-[60%] text-justify">Prazer, sou Rafael Ribeiro e sou um grande admirador das mulheres e após ajudar vários amigos com meu método, eu resolvi partir para internet e compartilhar com você também essas estratégias incríveis que vão certamente fazer de você um CONQUISTADOR, aquilo que começou com pequenas brincadeiras, ajudou vários amigos meus a se dar bem com elas e agora é sua vez de colocar em pratica esse método e  fazer você mexer com a cabeça das mulheres no seu dia a dia, lembrando que aqui o sigilo é garantido.        </p>
         </div>
       </section>
       <section id="sixth-section" className="bg-white p-5">
         <h3 className="text-red text-base font-bold mb-2 text-center md:mb-12 md:text-left md:text-lg md:px-14 md:mt-14">Conheça o curso</h3>
-        <div className="flex justify-center lg:flex lg:items-center lg:justify-center">
+        <div className="flex justify-center lg:flex-col">
           <div className="w-72">
             <Carousel
               showStatus={false}
@@ -154,7 +155,7 @@ export default function Home() {
             </Carousel>
           </div>
 
-          <div className="hidden gap-20 md:flex md:mb-14">
+          <div className="hidden gap-20 md:flex md:mb-14 lg:justify-center">
             <Card type="red" title="Bônus 01">
               Canal no Telegram para dicas diárias além de lives para te ajudar ainda mais.
             </Card>
@@ -181,7 +182,7 @@ export default function Home() {
         <div className="flex items-center">
           <div className="py-4 md:ml-20 md:mt-4 md:w-[70%] md:flex md:flex-col md:flex-start 2xl:ml-40 2xl:w-full">
             <strong className="text-red text-base">Garantia</strong>
-            <p className="text-black text-justify text-sm  2xl:text-baseSm">Você tem garantia incondicional de 07 dias. O risco é todo meu, se você não gostar, só pedir seu dinheiro de volta em até 07 dias após a compra que eu te devolvo sem nem perguntar por quê.
+            <p className="text-black text-justify text-sm 2xl:text-baseSm">Você tem garantia incondicional de 07 dias. O risco é todo meu, se você não gostar, só pedir seu dinheiro de volta em até 07 dias após a compra que eu te devolvo sem nem perguntar por quê.
             </p>
           </div>
           <Image src={garantia} alt="garantia" className="h-20 w-20 object-cover ml-4"></Image>
@@ -229,7 +230,7 @@ export default function Home() {
             <Image alt="print" src={prints.print7} className="shadow-sm px-2" />
           </Carousel>
         </div>
-        <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold mb-10 md:mb-0 bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center md:h-16 md:w-48"> Comece Agora <br /> Mesmo!</a>
+        <a href="https://pay.hotmart.com/E92520462X" className="text-black font-bold mb-10 md:mb-0 lg:mb-4 bg-yellow h-16 w-60 flex justify-center items-center rounded-full transition-colors duration-200 hover:bg-yellow-hover text-center md:h-16 md:w-48"> Comece Agora <br /> Mesmo!</a>
       </section>
       <section id="nineth" className="bg-[#181818] pb-10 py-6 p-8 md:p-20">
         <h3 className="text-[#FF0000] text-base font-bold text-left md:mb-12 md:text-left md:text-lg">Perguntas e Respostas:</h3>
