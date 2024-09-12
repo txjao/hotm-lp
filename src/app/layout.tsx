@@ -26,7 +26,7 @@ export default function RootLayout({
           <FacebookPixelEvents />
         </Suspense>
       </body>
-      <GoogleTagManager gtmId="GTM-PX9LFK4T" />
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID as string} />
     </html>
   );
 }
